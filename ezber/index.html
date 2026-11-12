@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Din Kültürü 7 · Ezber Listesi</title>
+<meta name="description" content="7. sınıf Din Kültürü 1. yazılı Senaryo 3: yalnızca ezberlenecekler. Solda Türkçe, sağda Arapça.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Memorisation sheet: one table per topic, Turkish in the left column, Arabic in the right. */
+:root{--bg:#f5f6fa;--card:#fff;--ink:#162033;--muted:#5a6377;--line:#dde2ec;--onu:#fff;
+  --c1:#7240b0;--c1s:#f2ecfa;--c2:#1f5fbf;--c2s:#e8f0fc;--c3:#b0600d;--c3s:#fdf0e2;--c4:#0d7a6e;--c4s:#e4f5f2;
+  --f-tr:"Lexend","Segoe UI",system-ui,sans-serif;--f-ar:"Readex Pro","Segoe UI",Tahoma,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e131d;--card:#161d2a;--ink:#e6eaf2;--muted:#9aa4b8;--line:#2a3445;--onu:#0e131d;
+  --c1:#b48ae8;--c1s:#2a2238;--c2:#7fb0f5;--c2s:#162a47;--c3:#f0a85a;--c3s:#38271a;--c4:#4cc7b8;--c4s:#14302d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e131d;--card:#161d2a;--ink:#e6eaf2;--muted:#9aa4b8;--line:#2a3445;--onu:#0e131d;
+  --c1:#b48ae8;--c1s:#2a2238;--c2:#7fb0f5;--c2s:#162a47;--c3:#f0a85a;--c3s:#38271a;--c4:#4cc7b8;--c4s:#14302d;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 var(--f-tr)}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 70px;display:grid;gap:22px}
+.back{font-size:14px;color:var(--muted);text-decoration:none;justify-self:start;padding:6px 0}
+.back:hover{color:var(--ink)}
+header{display:grid;gap:6px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+h1{margin:0;font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2}
+header p{margin:0;color:var(--muted)}
+header .ar{font-family:var(--f-ar);direction:rtl;text-align:right}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.jump a{font:600 13.5px var(--f-tr);text-decoration:none;padding:7px 12px;border-radius:999px;background:var(--cs);color:var(--c)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:12px}
+.t1{--c:var(--c1);--cs:var(--c1s)}.t2{--c:var(--c2);--cs:var(--c2s)}.t3{--c:var(--c3);--cs:var(--c3s)}.t4{--c:var(--c4);--cs:var(--c4s)}
+section>h2{margin:0;padding:14px 18px;background:var(--c);color:var(--onu);font-size:1.2rem;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;justify-content:space-between}
+section>h2 span{font:500 1rem var(--f-ar)}
+table{width:100%;border-collapse:collapse;table-layout:fixed}
+th,td{padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:top;word-wrap:break-word;overflow-wrap:anywhere}
+tr:last-child td{border-bottom:0}
+thead th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:var(--cs);text-align:left;padding:7px 14px}
+thead th:last-child{text-align:right;font-family:var(--f-ar)}
+td:first-child{border-right:1px solid var(--line)}
+td:last-child{font-family:var(--f-ar);direction:rtl;text-align:right;line-height:1.85;font-size:1.03em}
+tr.g td{background:var(--cs);color:var(--c);font-weight:700;font-size:14px;padding:6px 14px}
+tr.g td:last-child{font-size:14px}
+td b{color:var(--c);font-weight:600}
+tr:not(.g):nth-child(even) td{background:color-mix(in srgb,var(--cs) 35%,transparent)}
+.verse td:last-child{font:500 1.55rem/2 "Amiri","Scheherazade New","Traditional Arabic","Readex Pro",serif}
+.verse td:first-child small{display:block;color:var(--muted);font-weight:400;margin-top:2px}
+.verse td:first-child b{display:block}
+.note{font-size:14px;color:var(--muted);margin:0}
+@media (max-width:620px){
+  body{font-size:14.5px}main{padding:14px 10px 50px}
+  th,td{padding:7px 8px}
+  td:last-child{font-size:1em;line-height:1.8}
+  .verse td:last-child{font-size:1.25rem}
+}
+@media print{.back,.jump{display:none}body{background:#fff}section{break-inside:avoid-page}tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="../">← Tüm konu anlatımı · الشرح الكامل</a>
+<header id="top">
+  <p class="kicker">7. Sınıf Din Kültürü · 1. Yazılı · Senaryo 3</p>
+  <h1>Ezber Listesi</h1>
+  <p>Sadece ezberlenecekler. Solda Türkçe, sağda Arapça. Kaynak: ders kitabı, 1. Ünite.</p>
+  <p class="ar" lang="ar">فقط ما يجب حفظه. التركية على اليسار والعربية على اليمين. المصدر: كتاب المدرسة، الوحدة الأولى.</p>
+  <nav class="jump" aria-label="Bölümler">
+    <a href="#a" style="--c:var(--c1);--cs:var(--c1s)">1 · Varlıklar Âlemi</a>
+    <a href="#b" style="--c:var(--c2);--cs:var(--c2s)">2 · Dünya ve Ahiret</a>
+    <a href="#c" style="--c:var(--c3);--cs:var(--c3s)">3 · Kazandırdıkları</a>
+    <a href="#d" style="--c:var(--c4);--cs:var(--c4s)">4 · Nâs Suresi</a>
+  </nav>
+</header>
+
+<!-- 1 -->
+<section class="t1" id="a">
+  <h2>1 · Varlıklar Âlemi <span lang="ar" dir="rtl">عالم الكائنات</span></h2>
+  <table>
+    <thead><tr><th>Türkçe</th><th>العربية</th></tr></thead>
+    <tbody>
+      <tr class="g"><td>Temel kavramlar</td><td>المفاهيم الأساسية</td></tr>
+      <tr><td><b>Âlem:</b> Allah'ın (cc) yarattığı, duyu organları ve akılla bilinebilen veya var olduğu düşünülebilen bütün varlıklar.</td><td><b>العالَم:</b> كل ما خلقه الله مما يُعرف بالحواس والعقل أو يمكن تصوّر وجوده.</td></tr>
+      <tr><td><b>Gayb:</b> görülemeyen âlem. Gelecek de gayb sayılır. Gaybı <b>yalnızca Allah</b> bilir.</td><td><b>الغيب:</b> العالم الذي لا يُرى، ومنه المستقبل. والله <b>وحده</b> يعلم الغيب.</td></tr>
+      <tr><td>Melek, cin ve şeytan <b>gayb âlemindendir</b>; bilgi kaynağı ayet ve hadistir.</td><td>الملائكة والجن والشيطان من <b>عالم الغيب</b>، ومصدر معرفتها الآيات والأحاديث.</td></tr>
+      <tr><td>Melek <b>nurdan</b>, cin <b>yalın ateşten</b>, Hz. Âdem <b>topraktan</b> yaratıldı.</td><td>الملائكة من <b>نور</b>، والجن من <b>نار خالصة</b>، وآدم من <b>تراب</b>.</td></tr>
+      <tr><td>Şeytan cinlerdendir. Hz. Âdem'e secde etmedi, <b>kibirlendi</b>, cennetten kovuldu.</td><td>الشيطان من الجن. لم يسجد لآدم و<b>تكبّر</b> فطُرد من الجنة.</td></tr>
+      <tr class="g"><td>Meleklerin özellikleri</td><td>صفات الملائكة</td></tr>
+      <tr><td>1. Nurdan yaratılmışlardır.</td><td>١. خُلقوا من نور.</td></tr>
+      <tr><td>2. İradeleri yoktur; Allah'ın emrine itaat ederler.</td><td>٢. لا إرادة لهم، ويطيعون أمر الله.</td></tr>
+      <tr><td>3. Hızlı ve güçlüdürler.</td><td>٣. سريعون وأقوياء.</td></tr>
+      <tr><td>4. Yeme, içme, uyuma, dinlenme ihtiyaçları yoktur.</td><td>٤. لا يحتاجون إلى أكل ولا شرب ولا نوم ولا راحة.</td></tr>
+      <tr><td>5. Sayılarını sadece Allah bilir.</td><td>٥. لا يعلم عددهم إلا الله.</td></tr>
+      <tr><td>6. İnananların iyiliği için dua ederler.</td><td>٦. يدعون للمؤمنين.</td></tr>
+      <tr><td>7. Cinsiyetleri yoktur.</td><td>٧. لا جنس لهم.</td></tr>
+      <tr><td>8. İnsanlardan önce yaratılmışlardır.</td><td>٨. خُلقوا قبل الإنسان.</td></tr>
+      <tr><td>9. Bazılarının özel adları ve görevleri vardır.</td><td>٩. بعضهم له اسم ومهمة محدّدة.</td></tr>
+      <tr><td>10. Allah'ın izniyle farklı suretlere bürünebilirler.</td><td>١٠. يتشكّلون بأشكال مختلفة بإذن الله.</td></tr>
+      <tr class="g"><td>Melekler ve görevleri</td><td>الملائكة ومهامهم</td></tr>
+      <tr><td><b>Cebrail (as):</b> vahiy meleği. Peygamberlere Allah'ın emirlerini bildirir.</td><td><b>جبريل:</b> مَلَك الوحي، يبلّغ الأنبياء أوامر الله.</td></tr>
+      <tr><td><b>Azrail (as):</b> ölüm meleği (Melekülmevt). Canı alır.</td><td><b>عزرائيل:</b> مَلَك الموت، يقبض الأرواح.</td></tr>
+      <tr><td><b>Mikâil (as):</b> rızıkların dağıtılması, yağmur, bitkilerin gelişmesi.</td><td><b>ميكائيل:</b> الأرزاق والمطر ونمو النبات.</td></tr>
+      <tr><td><b>İsrafil (as):</b> sûra <b>iki kez</b> üfler.</td><td><b>إسرافيل:</b> ينفخ في الصور <b>نفختين</b>.</td></tr>
+      <tr><td><b>Kiramen Kâtibin:</b> insanın sağında ve solunda; sevap ve günahları amel defterine yazar.</td><td><b>الكرام الكاتبون:</b> عن يمين الإنسان وشماله، يكتبون الحسنات والسيئات.</td></tr>
+      <tr><td><b>Münker ve Nekir:</b> kabirde sorguya çeker.</td><td><b>منكر ونكير:</b> يسألان العبد في القبر.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 2 -->
+<section class="t2" id="b">
+  <h2>2 · Dünya ve Ahiret Hayatı <span lang="ar" dir="rtl">الدنيا والآخرة</span></h2>
+  <table>
+    <thead><tr><th>Türkçe</th><th>العربية</th></tr></thead>
+    <tbody>
+      <tr class="g"><td>Ahiret</td><td>الآخرة</td></tr>
+      <tr><td><b>Ahiret:</b> dünya hayatının sona ermesiyle başlayan <b>ebedî hayat</b>. Ahirete iman, inanç esaslarındandır.</td><td><b>الآخرة:</b> الحياة <b>الأبدية</b> التي تبدأ بانتهاء الدنيا. والإيمان بها من أركان الإيمان.</td></tr>
+      <tr><td>Ahiret hayatı, insanların <b>dünyada yaptıklarına göre</b> şekillenir.</td><td>الآخرة تتشكّل <b>حسب ما عمله الإنسان في الدنيا</b>.</td></tr>
+      <tr class="g"><td>Aşamaların sırası</td><td>ترتيب المراحل</td></tr>
+      <tr><td><b>Ölüm → Kıyamet → Baas → Mahşer → Mizan → Cennet / Cehennem</b></td><td><b>الموت ← القيامة ← البعث ← المحشر ← الميزان ← الجنة أو النار</b></td></tr>
+      <tr class="g"><td>Her aşamada ne olur?</td><td>ماذا يحدث في كل مرحلة؟</td></tr>
+      <tr><td><b>Ölüm:</b> dünya hayatının sona ermesi; kabir hayatı (berzah) başlar. Yeni ve sonsuz hayatın başlangıcıdır.</td><td><b>الموت:</b> نهاية الحياة الدنيا وبداية حياة القبر (البرزخ)، وهو بداية حياة أبدية جديدة.</td></tr>
+      <tr><td><b>Kıyamet:</b> İsrafil sûra üfler, <b>kâinattaki her şey son bulur</b>. Zamanını yalnızca Allah bilir.</td><td><b>القيامة:</b> ينفخ إسرافيل في الصور فينتهي <b>كل شيء في الكون</b>. ووقتها لا يعلمه إلا الله.</td></tr>
+      <tr><td><b>Baas:</b> İsrafil sûra ikinci kez üfler, insanlar <b>yeniden diriltilir</b>.</td><td><b>البعث:</b> ينفخ إسرافيل النفخة الثانية فيُحيا الناس <b>من جديد</b>.</td></tr>
+      <tr><td><b>Mahşer:</b> insanların hesap vermek için <b>toplandığı yer</b>. Amel defterleri verilir.</td><td><b>المحشر:</b> المكان الذي <b>يجتمع فيه الناس</b> للحساب. وتُعطى صحائف الأعمال.</td></tr>
+      <tr><td><b>Mizan:</b> sevap ve günahların tartıldığı <b>manevi adalet terazisi</b>.</td><td><b>الميزان:</b> <b>ميزان العدل المعنوي</b> توزن به الحسنات والسيئات.</td></tr>
+      <tr><td><b>Cennet:</b> müminlerin ebedî mükâfat yeri. <b>Cehennem:</b> günahların karşılığının görüldüğü yer.</td><td><b>الجنة:</b> دار المؤمنين الأبدية. <b>النار:</b> مكان جزاء الذنوب.</td></tr>
+      <tr class="g"><td>Diğer kavramlar</td><td>مفاهيم أخرى</td></tr>
+      <tr><td><b>Ömür:</b> doğumdan ölüme kadar yaşam süresi.</td><td><b>العمر:</b> مدة الحياة من الولادة إلى الموت.</td></tr>
+      <tr><td><b>Ecel:</b> ölüm için belirlenen zaman.</td><td><b>الأجل:</b> الوقت المحدّد للموت.</td></tr>
+      <tr><td><b>Amel defteri:</b> yapılan her şeyin yazılı olduğu defter.</td><td><b>صحيفة الأعمال:</b> الكتاب المسجَّل فيه كل ما فعله الإنسان.</td></tr>
+      <tr><td><b>Berzah:</b> dünya ile ahiret arasındaki âlem, kabir hayatı.</td><td><b>البرزخ:</b> العالم بين الدنيا والآخرة، أي حياة القبر.</td></tr>
+      <tr><td><b>Cennetin isimleri:</b> Firdevs, Meva, Naim, Adn, Darüsselam, Hüsna, Darülmukame.</td><td><b>أسماء الجنة:</b> الفردوس، المأوى، النعيم، عدن، دار السلام، الحسنى، دار المقامة.</td></tr>
+      <tr class="g"><td>Karıştırma</td><td>لا تخلط</td></tr>
+      <tr><td><b>Kıyamet</b> = her şeyin sonu (1. üfleme). <b>Baas</b> = yeniden diriliş (2. üfleme). Sûra üfleyen <b>İsrafil</b>'dir.</td><td><b>القيامة</b> = نهاية كل شيء (النفخة الأولى). <b>البعث</b> = الإحياء (النفخة الثانية). والذي ينفخ في الصور <b>إسرافيل</b>.</td></tr>
+      <tr><td>Peygamberler kıyametin vaktini <b>bilmez</b>; yalnızca Allah bilir.</td><td>الأنبياء <b>لا يعلمون</b> وقت القيامة؛ الله وحده يعلمه.</td></tr>
+      <tr class="g"><td>Allah'ın adaleti</td><td>عدل الله</td></tr>
+      <tr><td>Allah <b>adil, merhametli ve affedicidir</b>. İyiliğin karşılığı <b>on kat</b>, kötülüğün karşılığı <b>misli</b> kadardır (Enam 160).</td><td>الله <b>عادل رحيم غفور</b>. الحسنة بعشر أمثالها، والسيئة بمثلها فقط.</td></tr>
+      <tr><td>Günah işleyene hemen ceza vermez; <b>tövbe</b> için fırsat tanır. Rahmetinden ümit kesilmez.</td><td>لا يعاقب المذنب فوراً بل يمهله ليتوب. ولا يُيأس من رحمته.</td></tr>
+      <tr><td>Hadis: “Akıllı kişi, <b>kendini hesaba çeken</b> ve ölümden sonrası için çalışandır.”</td><td>الحديث: «العاقل من <b>حاسب نفسه</b> وعمل لما بعد الموت».</td></tr>
+      <tr><td>Kıyamet günü hesaba çekilen <b>5 şey</b>: ömrünü nerede geçirdiği · gençliğini nerede yıprattığı · malını nereden kazandığı · nerede harcadığı · bildiğiyle amel edip etmediği.</td><td><b>خمسة أسئلة:</b> عمره فيما أفناه · شبابه فيما أبلاه · ماله من أين اكتسبه · وفيما أنفقه · ماذا عمل بما علم.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 3 -->
+<section class="t3" id="c">
+  <h2>3 · Melek ve Ahiret İnancının Kazandırdıkları <span lang="ar" dir="rtl">أثر الإيمان</span></h2>
+  <table>
+    <thead><tr><th>Türkçe</th><th>العربية</th></tr></thead>
+    <tbody>
+      <tr class="g"><td>Meleklere iman</td><td>الإيمان بالملائكة</td></tr>
+      <tr><td>Kötülükten kaçınır, <b>iyiliğe yönelir</b>.</td><td>يبتعد عن الشر و<b>يتجه إلى الخير</b>.</td></tr>
+      <tr><td>Davranışlarının <b>kaydedildiğini</b> bilir; yalandan ve haksızlıktan uzak durur.</td><td>يعلم أن أعماله <b>تُسجَّل</b>، فيبتعد عن الكذب والظلم.</td></tr>
+      <tr><td><b>Doğruluk, yardımseverlik, sevgi, merhamet</b> gibi güzel ahlaka sahip olur.</td><td>يتحلى <b>بالصدق والمساعدة والمحبة والرحمة</b>.</td></tr>
+      <tr><td>Melekler korur, dua eder, destekler; insan Allah'ın sevgisini hisseder ve <b>manevi olarak güçlenir</b>.</td><td>الملائكة تحمي وتدعو وتؤيّد، فيشعر بحب الله و<b>يقوى معنوياً</b>.</td></tr>
+      <tr class="g"><td>Ahirete iman</td><td>الإيمان بالآخرة</td></tr>
+      <tr><td>Hayatını <b>anlamlandırır</b>; her şeyin bir yaratılış amacı olduğunu anlar.</td><td><b>يعطي حياته معنى</b>، ويعلم أن لكل شيء غاية.</td></tr>
+      <tr><td><b>Sorumluluk bilinci</b>: ailesine, çevresine, tüm canlılara karşı.</td><td><b>الشعور بالمسؤولية</b> تجاه أسرته وبيئته وكل المخلوقات.</td></tr>
+      <tr><td><b>Adalet</b>, iyilik, ihtiyaç sahiplerine yardım, akraba ve komşularla iyi geçinme.</td><td><b>العدل</b> والإحسان ومساعدة المحتاجين وحسن الجوار وصلة الأرحام.</td></tr>
+      <tr><td>Güzel davranışlarının karşılığını <b>ahirette göreceğini</b> bilir.</td><td>يعلم أنه سيرى جزاء عمله الحسن <b>في الآخرة</b>.</td></tr>
+      <tr><td>Dünyanın <b>imtihan yeri</b> olduğunu bilir; musibetlere <b>sabreder</b>.</td><td>يعلم أن الدنيا <b>دار امتحان</b> فـ<b>يصبر</b> على المصائب.</td></tr>
+      <tr><td><b>Yok olma endişesinden kurtulur</b>; sevdikleriyle ahirette birlikte olacağını bilmek huzur verir.</td><td><b>يتخلص من قلق الفناء</b>، ويطمئن لأنه سيلتقي أحبّته في الآخرة.</td></tr>
+      <tr class="g"><td>Cevap yazarken</td><td>عند كتابة الجواب</td></tr>
+      <tr><td><b>İnanç → davranış → “çünkü”</b> (nedeni) → günlük hayattan örnek.</td><td><b>الإيمان ← السلوك ← «çünkü» (لأنّ)</b> ← مثال من الحياة.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 4 -->
+<section class="t4" id="d">
+  <h2>4 · Nâs Suresi <span lang="ar" dir="rtl">سورة الناس</span></h2>
+  <table class="verse">
+    <thead><tr><th>Türkçe: okunuşu ve anlamı</th><th>العربية</th></tr></thead>
+    <tbody>
+      <tr><td><b>Bismillâhirraḥmânirraḥîm</b><small>Rahman ve Rahîm olan Allah'ın adıyla</small></td><td>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ</td></tr>
+      <tr><td><b>1. Ḳul eûẕü birabbinnâs</b><small>De ki: İnsanların Rabbine sığınırım</small></td><td>قُلْ أَعُوذُ بِرَبِّ النَّاسِ</td></tr>
+      <tr><td><b>2. Melikinnâs</b><small>İnsanların Melik'ine</small></td><td>مَلِكِ النَّاسِ</td></tr>
+      <tr><td><b>3. İlâhinnâs</b><small>İnsanların İlah'ına</small></td><td>إِلٰهِ النَّاسِ</td></tr>
+      <tr><td><b>4. Min şerril vesvâsil ḫannâs</b><small>Sinsi vesvesecinin kötülüğünden</small></td><td>مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ</td></tr>
+      <tr><td><b>5. Elleẕî yüvesvisü fî sudûrinnâs</b><small>İnsanların kalplerine vesvese veren</small></td><td>الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ</td></tr>
+      <tr><td><b>6. Minel cinneti vennâs</b><small>Cinlerden ve insanlardan</small></td><td>مِنَ الْجِنَّةِ وَالنَّاسِ</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr class="g"><td>Bilgiler</td><td>معلومات</td></tr>
+      <tr><td>Nâs suresi <b>6 ayettir</b>. Adını surede geçen <b>nâs (insanlar)</b> kelimesinden alır.</td><td>سورة الناس <b>ست آيات</b>، وسُمّيت باسم كلمة <b>«الناس»</b> الواردة فيها.</td></tr>
+      <tr><td>Felak suresiyle birlikte <b>“Muavvizeteyn”</b> adını alır.</td><td>تُسمّى مع سورة الفلق <b>«المعوّذتين»</b>.</td></tr>
+      <tr><td>Konusu: <b>vesvese veren şeytanın şerrinden Allah'a sığınmak</b>.</td><td>موضوعها: <b>الاستعاذة بالله من شرّ الشيطان الموسوس</b>.</td></tr>
+      <tr><td>Allah'a <b>üç sıfatla</b> sığınılır: <b>Rab, Melik, İlah</b>.</td><td>نلجأ إلى الله <b>بثلاث صفات</b>: <b>الرب والملك والإله</b>.</td></tr>
+      <tr><td>Hz. Muhammed (sav) her gün <b>yatmadan önce</b> Felak ve Nâs'ı okurdu; <b>her namazdan sonra</b> okunmasını tavsiye etti.</td><td>كان النبي ﷺ يقرأ الفلق والناس <b>قبل النوم</b>، ونصح بقراءتهما <b>بعد كل صلاة</b>.</td></tr>
+      <tr><td><b>Dua</b>, Allah'a sığınmaktır.</td><td><b>الدعاء</b> هو اللجوء إلى الله.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<p class="note">Sayfa numaraları ve açıklamalar için ana sayfaya dön: <a href="../">konu anlatımı</a>. · للتفاصيل ورقم الصفحات ارجع إلى <a href="../">الشرح الكامل</a>.</p>
+</main>
+</body>
+</html>

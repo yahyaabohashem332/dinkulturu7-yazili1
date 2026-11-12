@@ -5,3 +5,5 @@
 صفحة دراسة لامتحان مادة الدين الأول للصف السابع (السيناريو 3): الوحدة الأولى «الإيمان بالملائكة والآخرة»، بالتركية مع ترجمة عربية.
 
 **Site · الموقع:** https://yahyaabohashem332.github.io/dinkulturu7-yazili1/
+
+**Ezber listesi · قائمة الحفظ:** https://yahyaabohashem332.github.io/dinkulturu7-yazili1/ezber/
