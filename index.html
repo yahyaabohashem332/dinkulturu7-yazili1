@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Din Kültürü 7 · 1. Yazılı · Senaryo 3</title>
+<meta name="description" content="7. sınıf Din Kültürü ve Ahlak Bilgisi 1. dönem 1. ortak yazılı, Senaryo 3: Melek ve Ahiret İnancı. Türkçe ve Arapça.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* One exam, four topics. Turkish on the left of each row, Arabic on the right; the Senaryo 3 distribution is pinned on the right of the page. */
+:root{
+  --bg:#f5f6fa;--card:#fff;--paper:#fbfaf6;--ink:#162033;--muted:#5a6377;--line:#dde2ec;--onu:#fff;
+  --c1:#7240b0;--c1s:#f2ecfa;--c2:#1f5fbf;--c2s:#e8f0fc;--c3:#b0600d;--c3s:#fdf0e2;--c4:#0d7a6e;--c4s:#e4f5f2;
+  --ok:#1d7a3a;--oks:#e6f4ea;--bad:#b3402a;--bads:#fbebe7;--tip:#9a6a00;--tips:#fdf5e1;
+  --f-tr:"Lexend","Segoe UI",system-ui,sans-serif;--f-ar:"Readex Pro","Segoe UI",Tahoma,sans-serif;
+  color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e131d;--card:#161d2a;--paper:#1b2331;--ink:#e6eaf2;--muted:#9aa4b8;--line:#2a3445;--onu:#0e131d;
+  --c1:#b48ae8;--c1s:#2a2238;--c2:#7fb0f5;--c2s:#162a47;--c3:#f0a85a;--c3s:#38271a;--c4:#4cc7b8;--c4s:#14302d;
+  --ok:#5fcf7f;--oks:#173022;--bad:#f08a72;--bads:#3a211c;--tip:#e8b94a;--tips:#332a14;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e131d;--card:#161d2a;--paper:#1b2331;--ink:#e6eaf2;--muted:#9aa4b8;--line:#2a3445;--onu:#0e131d;
+  --c1:#b48ae8;--c1s:#2a2238;--c2:#7fb0f5;--c2s:#162a47;--c3:#f0a85a;--c3s:#38271a;--c4:#4cc7b8;--c4s:#14302d;
+  --ok:#5fcf7f;--oks:#173022;--bad:#f08a72;--bads:#3a211c;--tip:#e8b94a;--tips:#332a14;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--f-tr)}
+[lang="ar"],.ar{font-family:var(--f-ar)}
+.ar{direction:rtl;text-align:right}
+a{color:inherit}
+h1,h2,h3{line-height:1.25;margin:0;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding-inline-start:1.3em}
+b,strong{font-weight:600}
+bdi{unicode-bidi:isolate}
+
+.layout{max-width:1260px;margin:0 auto;padding:24px 20px 80px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+main{display:grid;gap:22px;min-width:0}
+.hero{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.hero h1{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:700}
+.hero .bi{margin-top:10px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+.bi{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 26px;align-items:start}
+.bi>*{min-width:0}
+.bi+.bi{margin-top:12px}
+@media (max-width:720px){.bi{grid-template-columns:1fr}}
+
+.unit{border-radius:18px;padding:20px 24px;color:var(--onu);background:var(--c)}
+.unit h2{font-size:1.5rem}
+.unit .bi{margin-top:6px;opacity:.96}
+.unit .code{font-size:13px;font-weight:600;opacity:.9;margin-top:4px}
+.t1{--c:var(--c1);--cs:var(--c1s)}.t2{--c:var(--c2);--cs:var(--c2s)}.t3{--c:var(--c3);--cs:var(--c3s)}.t4{--c:var(--c4);--cs:var(--c4s)}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c,var(--line));border-radius:16px;padding:22px 24px;display:grid;gap:16px;min-width:0}
+.card>h2{font-size:1.25rem;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline}
+.card>h2 .ar{font-size:.95em;font-weight:600;color:var(--muted)}
+h3{font-size:1.05rem;color:var(--c,var(--ink))}
+.pg{display:inline-block;font:600 12px/1 var(--f-tr);padding:5px 9px;border-radius:999px;background:var(--cs,var(--paper));color:var(--c,var(--muted));white-space:nowrap;vertical-align:middle}
+.chip{display:inline-block;font:600 12.5px/1 var(--f-tr);padding:6px 10px;border-radius:999px;background:var(--c);color:var(--onu);white-space:nowrap}
+
+.box{border-radius:12px;padding:14px 16px;background:var(--cs,var(--paper))}
+.tip{background:var(--tips)}
+.trap{background:var(--bads)}
+.trap h3{color:var(--bad)}
+.ex{font-weight:500}.ex li{margin:3px 0}
+.no{color:var(--bad);text-decoration:line-through;text-decoration-thickness:2px}
+.yes{color:var(--ok);font-weight:600}
+.hl{background:var(--cs,var(--tips));color:var(--c,var(--tip));padding:0 5px;border-radius:5px;font-weight:600}
+.def{font-size:1.06em;font-weight:500}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);background:var(--paper)}
+td:first-child{font-weight:600}
+td[lang="ar"],th[lang="ar"]{text-align:right}
+tr.grp td{background:var(--cs,var(--paper));color:var(--c,var(--ink));font-weight:700;font-size:13.5px}
+@media (max-width:720px){table{font-size:14.5px}th,td{padding:7px 9px}}
+
+/* ahiret stages as a path */
+.path{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;counter-reset:s}
+.path>div{counter-increment:s;background:var(--cs);border-radius:12px;padding:10px 8px;text-align:center;position:relative;font-weight:700;font-size:15px;color:var(--c)}
+.path>div::before{content:counter(s);display:block;width:24px;height:24px;margin:0 auto 4px;border-radius:50%;background:var(--c);color:var(--onu);font:700 12.5px/24px var(--f-tr)}
+.path small{display:block;font:500 12px var(--f-ar);color:var(--muted);margin-top:2px}
+@media (max-width:620px){.path{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.angels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.angels>div{background:var(--cs);border-radius:12px;padding:12px 14px}
+.angels h3{font-size:1.1rem}
+.angels h3 span{font:500 14px var(--f-ar);color:var(--muted);margin-inline-start:6px}
+.angels p{font-size:15.5px;margin-top:4px}
+@media (max-width:620px){.angels{grid-template-columns:1fr}}
+
+.say{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:14px 16px;display:grid;gap:6px}
+.say .who{font-weight:700;color:var(--c)}
+.model{background:var(--cs);border-radius:12px;padding:14px 16px}
+.model mark{background:transparent;color:var(--c);font-weight:700}
+
+details{border-radius:10px}
+details>summary{cursor:pointer;font-weight:600;font-size:14.5px;color:var(--c,var(--ink));list-style:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0;min-height:32px}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"▸";transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)}
+details.ans>div{background:var(--oks);border-radius:10px;padding:10px 14px;margin-top:4px}
+
+/* surah */
+.surah{display:grid;gap:10px}
+.verse{display:grid;grid-template-columns:34px minmax(0,1fr) minmax(0,1fr);gap:6px 16px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.verse .n{width:30px;height:30px;border-radius:50%;background:var(--c);color:var(--onu);font:700 13px/30px var(--f-tr);text-align:center}
+.verse .okunus{font-weight:600}
+.verse .okunus small{display:block;font-weight:500;color:var(--muted);font-size:14px;margin-top:2px}
+.verse .arabic{font:500 1.7rem/1.9 "Amiri","Scheherazade New","Traditional Arabic","Readex Pro",serif;direction:rtl;text-align:right}
+@media (max-width:620px){.verse{grid-template-columns:34px 1fr}.verse .arabic{grid-column:1/-1}}
+.besmele{text-align:center;font:500 1.7rem/2 "Amiri","Scheherazade New","Traditional Arabic","Readex Pro",serif;direction:rtl}
+
+/* drills */
+.quiz{display:grid;gap:10px}
+.qi{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:grid;gap:8px}
+.qi .q{font-weight:600}
+.qi .opts{display:flex;flex-wrap:wrap;gap:8px}
+.qi button,.seq button{font:500 15px/1.25 var(--f-tr);padding:9px 14px;min-height:42px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;text-align:left}
+.qi button:hover,.seq button:hover{border-color:var(--c,var(--ink))}
+.qi button.right{background:var(--oks);border-color:var(--ok);color:var(--ok);font-weight:600}
+.qi button.wrong{background:var(--bads);border-color:var(--bad);color:var(--bad)}
+.qi button:disabled{cursor:default}
+.qi .why{font-size:14.5px;color:var(--muted);display:none}
+.qi.done .why{display:block}
+.score{font-weight:600;color:var(--muted)}
+.again{justify-self:start;font:600 14px var(--f-tr);padding:8px 14px;border-radius:999px;border:1.5px solid var(--c,var(--ink));background:transparent;color:var(--c,var(--ink));cursor:pointer;min-height:40px}
+.seq{display:grid;gap:10px}
+.seq .slots{display:grid;gap:6px;counter-reset:z}
+.seq .slot{counter-increment:z;min-height:40px;border:1.5px dashed var(--line);border-radius:10px;padding:8px 12px;display:flex;gap:8px;align-items:center}
+.seq .slot::before{content:counter(z);font-weight:700;color:var(--c)}
+.seq .slot.full{border-style:solid;border-color:var(--ok);background:var(--oks);font-weight:600}
+.seq .bank{display:flex;flex-wrap:wrap;gap:8px}
+.seq button.shake{border-color:var(--bad);background:var(--bads)}
+
+.cl{list-style:none;padding:0;display:grid;gap:6px}
+.cl label{display:grid;grid-template-columns:24px minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start;padding:8px 10px;border-radius:10px;cursor:pointer}
+.cl label:hover{background:var(--paper)}
+.cl input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--ok)}
+.cl input:checked~span{color:var(--muted);text-decoration:line-through}
+@media (max-width:720px){.cl label{grid-template-columns:24px 1fr}.cl label .ar{grid-column:2}}
+
+aside{position:sticky;top:16px;display:grid;gap:14px;max-height:calc(100vh - 32px);overflow:auto}
+.dist{background:var(--card);border:2px solid var(--ink);border-radius:18px;padding:18px}
+.dist h2{font-size:1.3rem}
+.dist .sub{color:var(--muted);font-size:14px;margin-top:2px}
+.drow{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:center;text-decoration:none;padding:10px;border-radius:12px;background:var(--cs);margin-top:8px;border:1.5px solid transparent}
+.drow:hover,.drow.on{border-color:var(--c)}
+.drow .n{width:44px;height:44px;border-radius:12px;background:var(--c);color:var(--onu);font:700 1.5rem/44px var(--f-tr);text-align:center}
+.drow .t{font-weight:600;font-size:14.5px;line-height:1.3}
+.drow .t small{display:block;font-weight:500;color:var(--muted);font-size:13px;margin-top:2px}
+.drow .t small span{font-family:var(--f-ar)}
+.drow .t em{display:block;font-style:normal;font-weight:600;color:var(--c);font-size:12.5px;margin-top:4px}
+.total{margin-top:12px;display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid var(--line);padding-top:10px;font-weight:700}
+.total .big{font-size:1.6rem}
+.dnote{font-size:13px;color:var(--muted);margin-top:8px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px}
+.toc a{display:block;text-decoration:none;font-size:14px;padding:5px 8px;border-radius:8px;color:var(--muted)}
+.toc a:hover{background:var(--paper);color:var(--ink)}
+.toc a.on{background:var(--cs,var(--paper));color:var(--c,var(--ink));font-weight:600}
+.toc .h{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:8px 8px 2px;color:var(--muted)}
+@media (max-width:1020px){.layout{grid-template-columns:1fr}aside{position:static;order:-1;max-height:none;overflow:visible}.toc{display:none}}
+@media (max-width:420px){body{font-size:16px}.layout{padding:16px 14px 60px}.card{padding:18px 16px}.hero{padding:20px 18px}.unit{padding:18px}}
+@media print{aside{position:static}.toc,.again{display:none}details{display:block}body{background:#fff}}
+:focus-visible{outline:3px solid var(--c,#2457c5);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="layout">
+<main>
+
+<header class="hero" id="top">
+  <p class="kicker">7. Sınıf Din Kültürü ve Ahlak Bilgisi · 1. Dönem 1. Ortak Yazılı · Senaryo 3</p>
+  <h1>Melek ve Ahiret İnancı</h1>
+  <div class="bi">
+    <p>Yazılı, ders kitabının yalnızca <b>1. Ünitesi</b>nden: <b>Melek ve Ahiret İnancı</b>. Senaryo 3'te <b>6 soru</b> var. Sınav <b>Cuma</b> günü.</p>
+    <p class="ar" lang="ar">الاختبار من الوحدة الأولى فقط في الكتاب: <b>الإيمان بالملائكة والآخرة</b>. في السيناريو 3 ستة أسئلة. والامتحان يوم <b>الجمعة</b>.</p>
+  </div>
+  <div class="bi">
+    <p>Tabloda öğretmenlerin el yazısı notu var: <i>“7. sınıflarda Din Kültürü ve Ahlak Bilgisi 1. yazılı sınavı 3. senaryodan yapılacaktır.”</i> Üç öğretmen imzalamış.</p>
+    <p class="ar" lang="ar">على الجدول ملاحظة مكتوبة بخط اليد من المعلمين: الامتحان الأول لمادة الدين في الصف السابع سيكون من <b>السيناريو الثالث</b>، وعليها ثلاثة توقيعات.</p>
+  </div>
+  <div class="bi">
+    <p>Bilgilerin hepsi ders kitabından; sayfa numarası <span class="pg">s. 16</span> gibi yanında. Soru türünü öğretmen belirler. Kitaptaki ünite sorularında dört tür var: doğru-yanlış, eşleştirme, çoktan seçmeli ve açık uçlu. Hepsine hazırlık var.</p>
+    <p class="ar" lang="ar">كل المعلومات من كتاب المدرسة، ورقم الصفحة بجانبها مثل <span class="pg">s. 16</span>. شكل الأسئلة يحدده المعلم. وفي أسئلة الكتاب أربعة أنواع: صح وخطأ، ومطابقة، واختيار من متعدد، وأسئلة مفتوحة. والصفحة تدرّبك على الأنواع كلها.</p>
+  </div>
+</header>
+
+<!-- ================= 1. VARLIKLAR ÂLEMİ ================= -->
+<section class="unit t1" id="u1">
+  <h2>1 · Varlıklar Âlemi</h2>
+  <p class="code">DKAB.7.1.1 · Melekleri sınıflandırabilme · <b>1 soru</b></p>
+  <div class="bi"><p>Âlem, gayb, melek, cin, şeytan. En önemlisi: meleklerin özellikleri ve görevleri.</p>
+    <p class="ar" lang="ar">العالَم والغيب والملائكة والجن والشيطان. والأهم: صفات الملائكة ومهامهم.</p></div>
+</section>
+
+<section class="card t1" id="u1-alem">
+  <h2>Âlem ve gayb <span class="ar" lang="ar">العالَم والغيب</span> <span class="pg">s. 14–16</span></h2>
+  <div class="bi">
+    <p class="def"><b>Âlem:</b> Allah'ın (cc) yarattığı, duyu organları ve akılla bilinebilen veya var olduğu düşünülebilen bütün varlıklar.</p>
+    <p class="ar def" lang="ar"><b>العالَم:</b> كل ما خلقه الله تعالى مما يُعرف بالحواس والعقل، أو يمكن تصوّر وجوده.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Tür</th><th>Örnekler</th><th lang="ar">العربية</th></tr></thead>
+    <tbody>
+      <tr><td>Görülebilen varlıklar</td><td style="font-weight:400">Güneş, Ay, yıldızlar, dağlar, denizler, bitkiler, hayvanlar</td><td lang="ar" dir="rtl" style="font-weight:400">كائنات تُرى: الشمس والقمر والنجوم والجبال والبحار والنباتات والحيوانات</td></tr>
+      <tr><td>Gözle görülemez, araçla tespit edilir</td><td style="font-weight:400">mikroorganizmalar (mikroskop), çok uzaktaki yıldızlar (teleskop)</td><td lang="ar" dir="rtl" style="font-weight:400">لا تُرى بالعين وتُكتشف بالأجهزة: الكائنات الدقيقة (المجهر) والنجوم البعيدة (التلسكوب)</td></tr>
+      <tr><td>Soyut kavramlar</td><td style="font-weight:400">akıl, sevgi, merhamet: görülmez ama varlığı kabul edilir</td><td lang="ar" dir="rtl" style="font-weight:400">مفاهيم مجرّدة: العقل والحب والرحمة، لا تُرى ولكن وجودها مقبول</td></tr>
+      <tr><td>Duyu ve araçlarla algılanamaz</td><td style="font-weight:400">melek, cin, şeytan · bilgi kaynağı: ayet ve hadis</td><td lang="ar" dir="rtl" style="font-weight:400">لا تُدرَك بالحواس ولا بالأجهزة: الملائكة والجن والشيطان، ومصدر معرفتها الآيات والأحاديث</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box">
+    <h3>Gayb <span class="ar" lang="ar" style="font-weight:600">الغيب</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ul class="ex">
+        <li>Kur'an'da <b>görülemeyen varlıklar</b> “gayb” kavramıyla ifade edilir.</li>
+        <li>Sözlükte: “görünmez âlem, göz önünde olmayan, nerede olduğu bilinmeyen”. <b>Gelecek zaman</b> da gayb sayılır.</li>
+        <li><b>Gaybı yalnızca Allah (cc) bilir.</b> İnsanlar bilemez; peygamberler ancak Allah'ın bildirdiği kadarını bilir. <span class="pg">Enam 59</span></li>
+        <li>Melek, cin ve şeytan <b>gayb âlemine</b> aittir.</li>
+      </ul>
+      <ul class="ar" lang="ar">
+        <li>القرآن يسمّي ما لا يُرى <b>«الغيب»</b>، ويدخل فيه المستقبل أيضاً.</li>
+        <li><b>الله وحده يعلم الغيب</b>، والأنبياء يعلمون منه ما أطلعهم الله عليه فقط.</li>
+        <li>الملائكة والجن والشيطان من <b>عالم الغيب</b>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="box trap">
+    <h3>Dikkat <span class="ar" lang="ar" style="font-weight:600">انتبه</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ul class="ex">
+        <li>“Görülebilen varlıklar Kur'an'da gayb kavramıyla ifade edilir” → <span class="no">yanlış</span>. Gayb = <b>görülemeyen</b>. <span class="pg">s. 45</span></li>
+        <li>Cinlerle iletişim kurup gelecekten haber aldığını söyleyenlere inanmak <span class="no">doğru değil</span>. <span class="pg">s. 16</span></li>
+      </ul>
+      <p class="ar" lang="ar">الغيب هو ما <b>لا يُرى</b> وليس ما يُرى. ومن يدّعي أنه يتصل بالجن ليعرف المستقبل فلا يُصدَّق.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card t1" id="u1-melek">
+  <h2>Melek, cin, şeytan <span class="ar" lang="ar">الملائكة والجن والشيطان</span> <span class="pg">s. 16–18</span></h2>
+  <div class="tw"><table>
+    <thead><tr><th></th><th>Melek</th><th>Cin</th><th>Şeytan</th></tr></thead>
+    <tbody>
+      <tr><td>Yaratıldığı madde</td><td style="font-weight:400"><b>nur</b></td><td style="font-weight:400"><b>yalın ateş</b></td><td style="font-weight:400">cinlerdendir; <b>ateşten</b> yaratıldı</td></tr>
+      <tr><td>Sorumluluk</td><td style="font-weight:400">Allah'ın emirlerine <b>itaat eder</b>, emredileni yapar (Tahrim 6)</td><td style="font-weight:400">İnsanlar gibi emir ve yasaklardan <b>sorumludur</b>; iman edeni de inkâr edeni de vardır (Zariyat 56)</td><td style="font-weight:400">Hz. Âdem'e secde etmeyerek <b>isyan etti</b>, cennetten kovuldu</td></tr>
+      <tr><td>Bilgi kaynağı</td><td style="font-weight:400" colspan="3">Üçü de gayb âlemindendir. Bilgiler Kur'an-ı Kerim ve hadislerden gelir.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="bi">
+    <div class="box"><p><b>Yaratılış:</b> “Melekler nurdan, cinler yalın ateşten, Âdem ise (topraktan) yaratıldı.” <span class="pg">Müslim hadisi · s. 18</span></p></div>
+    <p class="ar" lang="ar"><b>الخلق:</b> الملائكة من نور، والجن من نار خالصة، وآدم من تراب. والشيطان من الجن (سورة الكهف 50).</p>
+  </div>
+  <h3>Hz. Âdem kıssası <span class="ar" lang="ar" style="font-weight:600">قصة آدم</span> <span class="pg">s. 17</span></h3>
+  <div class="bi">
+    <ol class="ex">
+      <li>Allah (cc) Hz. Âdem'i <b>topraktan</b> yarattı; onu ve neslini diğer varlıklardan üstün kıldı.</li>
+      <li>“Yeryüzünde bir <b>halife</b> yaratacağım” deyince melekler sebebini sordu.</li>
+      <li>Allah Hz. Âdem'e varlıkların <b>isimlerini öğretti</b>. Melekler bilemedi, Âdem bildirdi. Melekler insanın üstün yaratıldığını anladı.</li>
+      <li>Meleklere “Âdem için saygı ile eğilin” denince <b>İblis hariç</b> hepsi eğildi.</li>
+      <li>İblis: “Ben ondan hayırlıyım. Beni ateşten, onu çamurdan yarattın.” dedi. <b>Kibirlendi</b>, isyan etti, cennetten kovuldu.</li>
+      <li>Şeytan, inanan ve gereğini yapanlara <b>kıyamete kadar düşman</b> oldu.</li>
+    </ol>
+    <ol class="ar" lang="ar">
+      <li>خلق الله آدم من تراب وفضّله وذريته على كثير من الخلق.</li>
+      <li>قال الله للملائكة: «إني جاعل في الأرض خليفة»، فسألوا عن الحكمة.</li>
+      <li>علّم الله آدم أسماء الأشياء، فعجزت الملائكة وأخبر آدم، فعلموا أن الإنسان مخلوق متميّز.</li>
+      <li>أُمرت الملائكة بالسجود لآدم فسجدوا كلهم إلا إبليس.</li>
+      <li>قال إبليس: «أنا خير منه، خلقتني من نار وخلقته من طين». تكبّر وعصى وطُرد من الجنة.</li>
+      <li>صار الشيطان عدوّاً للمؤمنين إلى يوم القيامة.</li>
+    </ol>
+  </div>
+  <div class="box tip"><div class="bi">
+    <p><b>Ders:</b> kibir, Allah'ın emrine karşı gelmeye götürür. Şeytan, ateşten yaratıldığı için kendini üstün gördü.</p>
+    <p class="ar" lang="ar"><b>الدرس:</b> الكِبر يقود إلى معصية أمر الله. فقد ظن الشيطان أنه أفضل لأنه خُلق من نار.</p>
+  </div></div>
+</section>
+
+<section class="card t1" id="u1-ozellik">
+  <h2>Meleklerin özellikleri <span class="ar" lang="ar">صفات الملائكة</span> <span class="pg">s. 16, 18, 19</span></h2>
+  <div class="bi">
+    <ul class="ex">
+      <li><b>Nurdan</b> yaratılmışlardır.</li>
+      <li>Allah'ın emirlerine itaat ederler; <b>iradeleri yoktur</b>.</li>
+      <li><b>Hızlı ve güçlüdürler</b>.</li>
+      <li>Yeme, içme, uyuma, dinlenme gibi <b>ihtiyaçları yoktur</b>.</li>
+      <li>Sayılarını <b>sadece Allah (cc) bilir</b>.</li>
+      <li>İnananların iyiliği için <b>dua ederler</b>.</li>
+      <li><b>Cinsiyetleri yoktur</b>.</li>
+      <li><b>İnsanlardan önce</b> yaratılmışlardır.</li>
+      <li>Bazılarının <b>özel adları ve görevleri</b> vardır.</li>
+      <li>Allah'ın (cc) izniyle <b>farklı suretlere bürünebilirler</b>.</li>
+    </ul>
+    <ul class="ar" lang="ar">
+      <li>خُلقوا من نور.</li>
+      <li>يطيعون أمر الله، ولا إرادة لهم.</li>
+      <li>سريعون وأقوياء.</li>
+      <li>لا يحتاجون إلى أكل ولا شرب ولا نوم ولا راحة.</li>
+      <li>لا يعلم عددهم إلا الله.</li>
+      <li>يدعون للمؤمنين.</li>
+      <li>لا جنس لهم (ليسوا ذكوراً ولا إناثاً).</li>
+      <li>خُلقوا قبل الإنسان.</li>
+      <li>بعضهم له اسم ومهمة محدّدة.</li>
+      <li>يتشكّلون بأشكال مختلفة بإذن الله.</li>
+    </ul>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Ayet / hadis</th><th>Hangi özellik?</th><th lang="ar">العربية</th></tr></thead>
+    <tbody>
+      <tr><td>Tahrim 6</td><td style="font-weight:400">Allah'ın emirlerine karşı gelmezler, emredileni yaparlar</td><td lang="ar" dir="rtl" style="font-weight:400">لا يعصون الله ما أمرهم</td></tr>
+      <tr><td>Müslim hadisi</td><td style="font-weight:400">Nurdan yaratılmışlardır</td><td lang="ar" dir="rtl" style="font-weight:400">خُلقوا من نور</td></tr>
+      <tr><td>Zümer 75</td><td style="font-weight:400">Rablerini hamd ile tespih ederler; Arş'ın etrafını kuşatırlar</td><td lang="ar" dir="rtl" style="font-weight:400">يسبّحون بحمد ربهم ويحفّون بالعرش</td></tr>
+      <tr><td>Ahzab 56</td><td style="font-weight:400">Peygamber'e salat (dua) ederler</td><td lang="ar" dir="rtl" style="font-weight:400">يصلّون على النبي</td></tr>
+      <tr><td>Ebu Davud hadisi</td><td style="font-weight:400">İlim öğrenmek için yola çıkanın hoşnutluğu için kanatlarını indirirler</td><td lang="ar" dir="rtl" style="font-weight:400">تضع الملائكة أجنحتها رضاً لطالب العلم</td></tr>
+      <tr><td>Meryem 17</td><td style="font-weight:400">Cebrail, Hz. Meryem'e tam bir insan şeklinde göründü: <b>farklı suretlere bürünebilirler</b></td><td lang="ar" dir="rtl" style="font-weight:400">تمثّل جبريل لمريم بشراً سويّاً، فهم يتشكّلون بأشكال مختلفة</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box trap"><div class="bi">
+    <ul class="ex"><li>“Meleklerin iradeleri vardır” → <span class="no">yanlış</span></li><li>“Melekler başka şekillere giremezler” → <span class="no">yanlış</span></li><li>“Cinler nurdan yaratılmıştır” → <span class="no">yanlış</span> (cin: yalın ateş)</li></ul>
+    <p class="ar" lang="ar">هذه الجمل الثلاث خاطئة، وتأتي كثيراً في أسئلة الصح والخطأ (انظر <b>s. 42</b> في الكتاب).</p>
+  </div></div>
+</section>
+
+<section class="card t1" id="u1-gorev">
+  <h2>Melekleri görevlerine göre sınıflandırma <span class="ar" lang="ar">تصنيف الملائكة حسب مهامهم</span> <span class="chip">1 soru</span> <span class="pg">s. 19–20</span></h2>
+  <div class="bi">
+    <p>“Melekleri sınıflandırabilme”: isme bakıp görevi, görevi okuyup ismi bulabilmelisin. Dört büyük melek: <b>Cebrail, Azrail, Mikâil, İsrafil</b>.</p>
+    <p class="ar" lang="ar">المطلوب أن تعرف المَلَك من مهمته والمهمة من اسمه. الملائكة الأربعة الكبار: <b>جبريل وعزرائيل وميكائيل وإسرافيل</b>.</p>
+  </div>
+  <div class="angels">
+    <div><h3>Cebrail (as) <span lang="ar">جبريل</span></h3><p>Allah'ın emir ve yasaklarını peygamberlerine bildiren <b>vahiy meleği</b>. Adları: Cibril, Ruhulkudüs, Ruhulemin. <span class="pg">Nahl 102</span></p></div>
+    <div><h3>Azrail (as) <span lang="ar">عزرائيل</span></h3><p>Ölüm vakti gelenlerin <b>canını alan</b> melek. Adı: Melekülmevt (ölüm meleği). <span class="pg">Secde 11</span></p></div>
+    <div><h3>Mikâil (as) <span lang="ar">ميكائيل</span></h3><p><b>Rızıkların dağıtılması</b>, yağmurların yağması, bitkilerin gelişmesi gibi <b>tabiat olaylarıyla</b> görevli melek.</p></div>
+    <div><h3>İsrafil (as) <span lang="ar">إسرافيل</span></h3><p>Allah'ın emriyle <b>sûra iki kez üfler</b>: kıyametin kopması ve ölümden sonra diriliş için. <span class="pg">Zümer 68</span></p></div>
+    <div><h3>Kiramen Kâtibin <span lang="ar">الكرام الكاتبون</span></h3><p>İnsanın <b>sağında ve solunda</b> bulunur; sevap ve günahları <b>amel defterine yazar</b>. <span class="pg">Kaf 17–18</span></p></div>
+    <div><h3>Münker ve Nekir <span lang="ar">منكر ونكير</span></h3><p>Kabirde insanları <b>sorguya çeker</b>. <span class="pg">Buhari hadisi</span></p></div>
+  </div>
+  <div class="bi">
+    <ul class="ar" lang="ar">
+      <li><b>جبريل:</b> ملك الوحي.</li><li><b>عزرائيل:</b> يقبض الأرواح (ملك الموت).</li>
+      <li><b>ميكائيل:</b> الأرزاق والمطر ونمو النبات.</li><li><b>إسرافيل:</b> ينفخ في الصور نفختين.</li>
+      <li><b>الكرام الكاتبون:</b> يكتبون الحسنات والسيئات.</li><li><b>منكر ونكير:</b> يسألان العبد في القبر.</li>
+    </ul>
+    <div class="box trap"><h3>En çok karıştırılanlar</h3>
+      <ul class="ex" style="margin-top:6px"><li>Sûra üfleyen <b>İsrafil</b>'dir; Mikâil ya da Cebrail <span class="no">değil</span>.</li><li>Rızık ve yağmur <b>Mikâil</b>'dir.</li></ul></div>
+  </div>
+</section>
+
+<!-- ================= 2. DÜNYA VE AHİRET ================= -->
+<section class="unit t2" id="u2">
+  <h2>2 · Dünya ve Ahiret Hayatı</h2>
+  <p class="code">DKAB.7.1.2 · Ahiret hayatının aşamalarını çözümleyebilme · <b>2 soru</b></p>
+  <div class="bi"><p>Ahiret nedir, aşamaları sırasıyla ne, her aşamada ne olur, Allah'ın adaleti.</p>
+    <p class="ar" lang="ar">ما هي الآخرة، وما مراحلها بالترتيب، وماذا يحدث في كل مرحلة، وعدل الله.</p></div>
+</section>
+
+<section class="card t2" id="u2-ahiret">
+  <h2>Ahiret nedir? <span class="ar" lang="ar">ما الآخرة؟</span> <span class="pg">s. 22, 30–31</span></h2>
+  <div class="bi">
+    <p class="def"><b>Ahiret:</b> sözlükte “son, sonra olan ve son gün”. Dünya hayatının sona ermesiyle başlayan <b>ebedî hayat</b>.</p>
+    <p class="ar def" lang="ar"><b>الآخرة:</b> لغةً «النهاية وما بعد». وهي الحياة الأبدية التي تبدأ بانتهاء الحياة الدنيا.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th></th><th>Dünya hayatı</th><th>Ahiret hayatı</th><th lang="ar">العربية</th></tr></thead>
+    <tbody>
+      <tr><td>Süre</td><td style="font-weight:400">Ölümle sona erer</td><td style="font-weight:400">Ebedîdir, sonsuzdur</td><td lang="ar" dir="rtl" style="font-weight:400">الدنيا تنتهي بالموت، والآخرة أبدية</td></tr>
+      <tr><td>Anlamı</td><td style="font-weight:400">İmtihan yeri. Allah ölümü ve hayatı “hanginiz daha güzel amel yapacak” diye yarattı (Mülk 2)</td><td style="font-weight:400">Asıl ve gerçek hayat (Ankebut 64)</td><td lang="ar" dir="rtl" style="font-weight:400">الدنيا دار امتحان، والآخرة هي الحياة الحقيقية</td></tr>
+      <tr><td>Adalet</td><td style="font-weight:400">Adalet her zaman sağlanamaz; haksızlıklar sürer</td><td style="font-weight:400">Adaletin <b>mutlak anlamda</b> gerçekleştiği yer; herkes yaptığının karşılığını eksiksiz görür (Zilzal 7–8)</td><td lang="ar" dir="rtl" style="font-weight:400">في الآخرة يتحقق العدل كاملاً</td></tr>
+      <tr><td>Bağ</td><td style="font-weight:400" colspan="2">Ahiret hayatı, insanların <b>dünyada yaptıklarına göre şekillenir</b> (Rad 22–24).</td><td lang="ar" dir="rtl" style="font-weight:400">الآخرة تتشكّل حسب ما عمله الإنسان في الدنيا</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="ex"><li><b>Ahirete iman</b>, İslam'ın inanç esasları (imanın şartları) arasındadır.</li><li>Hz. Âdem'den itibaren <b>bütün peygamberler</b> ahiret hayatını bildirmiştir.</li></ul>
+</section>
+
+<section class="card t2" id="u2-asama">
+  <h2>Ahiret hayatının aşamaları <span class="ar" lang="ar">مراحل الحياة الآخرة</span> <span class="chip">Ezberle: sıra</span> <span class="pg">s. 25–29</span></h2>
+  <div class="path" aria-label="Ahiret aşamaları">
+    <div>Ölüm<small>الموت</small></div><div>Kıyamet<small>القيامة</small></div><div>Baas<small>البعث</small></div>
+    <div>Mahşer<small>المحشر</small></div><div>Mizan<small>الميزان</small></div><div>Cennet / Cehennem<small>الجنة / النار</small></div>
+  </div>
+  <div class="bi">
+    <p>Sıra: <b>ölüm → kıyamet → baas → mahşer → mizan → cennet/cehennem</b>. Kitapta bu sıra çoktan seçmeli soruda doğru şık olarak çıkıyor. <span class="pg">s. 45</span></p>
+    <p class="ar" lang="ar">الترتيب: <b>الموت ← القيامة ← البعث ← المحشر ← الميزان ← الجنة أو النار</b>. وفي الكتاب سؤال اختيار من متعدد جوابه هذا الترتيب.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Aşama</th><th>Ne olur? (kitaba göre)</th><th lang="ar">العربية</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Ölüm</td><td style="font-weight:400">Dünya hayatının sona ermesi. <b>Kabir hayatı (berzah)</b> başlar. Ölüm yok oluş değil, <b>yeni ve sonsuz bir hayatın başlangıcıdır</b>. “Her nefis ölümü tadacaktır.” (Âl-i İmran 185)</td><td lang="ar" dir="rtl" style="font-weight:400">انتهاء الحياة الدنيا، وتبدأ حياة القبر (البرزخ). الموت ليس فناءً بل بداية حياة أبدية جديدة.</td></tr>
+      <tr><td>2 · Kıyamet</td><td style="font-weight:400">Allah'ın emriyle <b>İsrafil sûra üfler</b>; <b>kâinattaki her şey son bulur</b>, düzen sona erer. Ne zaman kopacağını <b>yalnızca Allah bilir</b> (Lokman 34); Hz. Peygamber de bilmediğini söylemiştir.</td><td lang="ar" dir="rtl" style="font-weight:400">ينفخ إسرافيل في الصور بأمر الله فينتهي كل شيء في الكون. ووقتها لا يعلمه إلا الله، والنبي ﷺ قال إنه لا يعلمه.</td></tr>
+      <tr><td>3 · Baas</td><td style="font-weight:400">İsrafil <b>sûra ikinci kez</b> üfleyince Allah insanları <b>yeniden diriltir</b>. “Ölümden sonra diriliş”.</td><td lang="ar" dir="rtl" style="font-weight:400">ينفخ إسرافيل النفخة الثانية فيحيي الله الناس من جديد. البعث هو الإحياء بعد الموت.</td></tr>
+      <tr><td>4 · Mahşer</td><td style="font-weight:400">Dirilen insanların <b>hesap vermek için toplandığı yer</b> (toplanmaya haşir denir). Kimse yaptığını inkâr edemez: ağızlar mühürlenir, <b>eller anlatır, ayaklar tanıklık eder</b> (Yasin 65). Amel defterleri verilir.</td><td lang="ar" dir="rtl" style="font-weight:400">المكان الذي يجتمع فيه الناس للحساب. لا ينكر أحد عمله: تُختم الأفواه وتشهد الأيدي والأرجل. وتُعطى صحائف الأعمال.</td></tr>
+      <tr><td>5 · Mizan</td><td style="font-weight:400">Sevap ve günahların tartıldığı <b>manevi adalet terazisi</b>. Sevapları ağır gelen mükâfatlanır, günahları ağır gelen cezalanır (Karia 6–11).</td><td lang="ar" dir="rtl" style="font-weight:400">ميزان العدل المعنوي توزن به الحسنات والسيئات. من ثقلت حسناته كوفئ، ومن خفّت عوقب.</td></tr>
+      <tr><td>6 · Cennet / Cehennem</td><td style="font-weight:400"><b>Cennet:</b> müminlerin ebedî mükâfat yeri. <b>Cehennem:</b> günahların karşılığının görüldüğü yer; Allah'ı inkâr edenler orada ebedî kalır (Tevbe 68).</td><td lang="ar" dir="rtl" style="font-weight:400">الجنة دار المؤمنين الأبدية. والنار جزاء الذنوب، ويخلد فيها من أنكر الله.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="bi">
+    <div class="box"><h3>Diğer kavramlar</h3>
+      <ul class="ex" style="margin-top:6px">
+        <li><b>Ömür:</b> doğumdan ölüme kadar yaşam süresi.</li>
+        <li><b>Ecel:</b> ölüm için belirlenen ve takdir edilen zaman.</li>
+        <li><b>Amel defteri:</b> dünyada yapılan her şeyin yazılı olduğu defter. Kur'an'da “kitap” da denir (İsra 13–14).</li>
+        <li><b>Berzah:</b> dünya ile ahiret arasındaki âlem, kabir hayatı.</li>
+      </ul></div>
+    <ul class="ar" lang="ar">
+      <li><b>العمر:</b> مدة حياة الإنسان من الولادة إلى الموت.</li>
+      <li><b>الأجل:</b> الوقت المحدّد للموت.</li>
+      <li><b>صحيفة الأعمال:</b> الكتاب المسجَّل فيه كل ما فعله الإنسان.</li>
+      <li><b>البرزخ:</b> العالم بين الدنيا والآخرة، أي حياة القبر.</li>
+    </ul>
+  </div>
+  <div class="box"><h3>Cennetin Kur'an'daki isimleri <span class="ar" lang="ar" style="font-weight:600">أسماء الجنة</span> <span class="pg">s. 28</span></h3>
+    <p class="ex" style="margin-top:6px">Firdevs · Meva · Naim · Adn · Darüsselam · Hüsna · Darülmukame</p></div>
+  <div class="box trap">
+    <h3>Karıştırma <span class="ar" lang="ar" style="font-weight:600">لا تخلط</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ul class="ex">
+        <li><b>Kıyamet</b> = her şeyin sonu (birinci üfleme). <b>Baas</b> = yeniden diriliş (ikinci üfleme). “Her şeyin yok olmasına baas denir” → <span class="no">yanlış</span>.</li>
+        <li>Sûra üfleyen <b>İsrafil</b>; “Cebrail'in sûra üflemesiyle kıyamet kopar” → <span class="no">yanlış</span>.</li>
+        <li><b>Mahşer</b> = toplanma yeri. <b>Mizan</b> = tartı. İkisini değiştirme.</li>
+        <li>Peygamberler kıyametin vaktini bilmez → “bilirler” <span class="no">yanlış</span>.</li>
+      </ul>
+      <p class="ar" lang="ar"><b>القيامة</b> = نهاية كل شيء (النفخة الأولى). <b>البعث</b> = الإحياء من جديد (النفخة الثانية). والذي ينفخ في الصور إسرافيل لا جبريل. والأنبياء لا يعلمون وقت القيامة. والمحشر مكان الاجتماع، والميزان للوزن.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card t2" id="u2-adalet">
+  <h2>Allah'ın adaleti, merhameti, affı <span class="ar" lang="ar">عدل الله ورحمته وعفوه</span> <span class="pg">s. 30–31</span></h2>
+  <div class="bi">
+    <ul class="ex">
+      <li>Allah (cc) <b>adil, merhametli ve affedicidir</b>.</li>
+      <li><b>İyiliği kat kat</b> ödüllendirir, kötülüğe <b>sadece hak ettiği kadar</b> karşılık verir: “Kim bir iyilik yaparsa ona on katı vardır. Kim de bir kötülük yaparsa o da sadece o kötülüğün misliyle cezalandırılır.” (Enam 160)</li>
+      <li>Günah işleyenlere <b>hemen ceza vermez</b>; düşünmeleri, pişman olmaları ve <b>tövbe</b> etmeleri için fırsat tanır.</li>
+      <li>İnsan hata yapsa da Allah'ın <b>rahmetinden ümit kesmez</b>.</li>
+      <li>Hadis: “Akıllı kişi, <b>kendini hesaba çeken</b> ve ölümden sonrası için çalışandır.” (Tirmizi)</li>
+    </ul>
+    <ul class="ar" lang="ar">
+      <li>الله عادل رحيم غفور.</li>
+      <li>يضاعف الحسنة عشر أمثالها، ولا يجزي على السيئة إلا بمثلها.</li>
+      <li>لا يعاقب المذنب فوراً، بل يمهله ليفكّر ويندم ويتوب.</li>
+      <li>لا ييأس الإنسان من رحمة الله مهما أخطأ.</li>
+      <li>الحديث: العاقل من حاسب نفسه وعمل لما بعد الموت.</li>
+    </ul>
+  </div>
+  <div class="box"><h3>Tirmizi hadisi: kıyamet günü hesaba çekilen 5 şey <span class="ar" lang="ar" style="font-weight:600">خمسة أسئلة يوم القيامة</span> <span class="pg">s. 24</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ol class="ex"><li>Ömrünü nerede ve nasıl geçirdiği</li><li>Gençliğini nerede yıprattığı</li><li>Malını nereden kazandığı</li><li>Malını nerede harcadığı</li><li>Bildiği ile amel edip etmediği</li></ol>
+      <ol class="ar" lang="ar"><li>عمره فيما أفناه</li><li>شبابه فيما أبلاه</li><li>ماله من أين اكتسبه</li><li>وفيما أنفقه</li><li>ماذا عمل بما علم</li></ol>
+    </div></div>
+</section>
+
+<section class="card t2" id="u2-ayet">
+  <h2>Ayet ve hadisten kavramı bul <span class="ar" lang="ar">استخرج المفهوم من الآية والحديث</span> <span class="chip">Çözümleme</span> <span class="pg">s. 23–24, 43</span></h2>
+  <div class="bi">
+    <p>Soru bir ayet verir, sen ahiretin <b>hangi aşamasından</b> söz ettiğini bulursun. Anahtar sözcüğü ara.</p>
+    <p class="ar" lang="ar">يعطيك السؤال آية أو حديثاً وعليك أن تحدّد عن أي مرحلة يتحدث. ابحث عن الكلمة المفتاحية.</p>
+  </div>
+  <div class="tw"><table>
+    <thead><tr><th>Metindeki ipucu</th><th>Kavram</th><th lang="ar">العربية</th></tr></thead>
+    <tbody>
+      <tr><td style="font-weight:400">“Kitap ortaya konur… küçük, büyük hiçbir şey bırakmadan hepsini sayıp dökmüş” (Kehf 49)</td><td>amel defteri</td><td lang="ar" dir="rtl" style="font-weight:400">صحيفة الأعمال</td></tr>
+      <tr><td style="font-weight:400">“Amellerin tartılması da haktır. Sevabı ağır basanlar…” (Araf 8)</td><td>mizan</td><td lang="ar" dir="rtl" style="font-weight:400">الميزان</td></tr>
+      <tr><td style="font-weight:400">“Sûra üflenir. Kabirlerden çıkmış, Rablerine doğru akın akın gitmektedirler.” (Yasin 51)</td><td>baas</td><td lang="ar" dir="rtl" style="font-weight:400">البعث</td></tr>
+      <tr><td style="font-weight:400">“Toplanıp cehenneme doldurulacaksınız. Orası ne fena yataktır!” (Âl-i İmran 12)</td><td>cehennem</td><td lang="ar" dir="rtl" style="font-weight:400">جهنم</td></tr>
+      <tr><td style="font-weight:400">“Sizi çamurdan yaratmış, sonra bir <b>ecel</b> tayin etmiştir.” (Enam 2)</td><td>ecel</td><td lang="ar" dir="rtl" style="font-weight:400">الأجل</td></tr>
+      <tr><td style="font-weight:400">“Kullarını <b>mahşerde</b> topladığın gün beni azabından koru.” (Tirmizi)</td><td>mahşer</td><td lang="ar" dir="rtl" style="font-weight:400">المحشر</td></tr>
+      <tr><td style="font-weight:400">“Salih kullarım için cennette hiçbir gözün görmediği nimetler hazırladım.” (Buhari)</td><td>cennet</td><td lang="ar" dir="rtl" style="font-weight:400">الجنة</td></tr>
+      <tr><td style="font-weight:400">“Siz bana kıyameti soruyorsunuz. Onun bilgisi sadece Allah katındadır.” (Müslim)</td><td>kıyamet</td><td lang="ar" dir="rtl" style="font-weight:400">القيامة</td></tr>
+      <tr><td style="font-weight:400">“Sonra yine muhakkak siz, kıyamet gününde (tekrar) diriltileceksiniz.” (Müminun 16)</td><td>baas</td><td lang="ar" dir="rtl" style="font-weight:400">البعث</td></tr>
+      <tr><td style="font-weight:400">“Kıyamet günü için adalet terazileri kuracağız.” (Enbiya 47)</td><td>mizan</td><td lang="ar" dir="rtl" style="font-weight:400">الميزان</td></tr>
+      <tr><td style="font-weight:400">“İman edip salih ameller işleyenlere içinden ırmaklar akan cennetler vardır.” (Buruc 11)</td><td>cennet</td><td lang="ar" dir="rtl" style="font-weight:400">الجنة</td></tr>
+    </tbody>
+  </table></div>
+  <p class="ex">İlk altısı kitabın ünite sorusunda (s. 43, soru 6–13) aynen geçer.</p>
+  <details class="ans"><summary>Kitaptaki kelebek sorusu (s. 46, soru 20)</summary><div>
+    <div class="bi"><p>Tırtılın kozada hareketsiz kalıp kelebek olarak çıkması, ölüp <b>yeniden diriltilmeyle</b> ilgilidir. Doğru şık: <b>C</b>, Bakara 28: “Siz cansız iken sizi dirilten Allah'ı nasıl inkâr ediyorsunuz? Sonra sizleri öldürecek, sonra yine diriltecektir.”</p>
+    <p class="ar" lang="ar">تحوّل اليرقة إلى فراشة بعد سكون يشبه البعث بعد الموت، فالجواب <b>C</b>: آية البقرة 28 عن الإحياء بعد الموت.</p></div>
+  </div></details>
+</section>
+
+<!-- ================= 3. KAZANDIRDIKLARI ================= -->
+<section class="unit t3" id="u3">
+  <h2>3 · Melek ve Ahiret İnancının İnsana Kazandırdıkları</h2>
+  <p class="code">DKAB.7.1.3 · Konusunda analitik düşünebilme · <b>2 soru</b></p>
+  <div class="bi"><p>İnanç → davranış ilişkisini kurup nedenini yazabilmek.</p>
+    <p class="ar" lang="ar">أن تربط بين الإيمان والسلوك وتكتب السبب.</p></div>
+</section>
+
+<section class="card t3" id="u3-etki">
+  <h2>İnanç → davranış <span class="ar" lang="ar">الإيمان ← السلوك</span> <span class="pg">s. 34</span></h2>
+  <div class="bi">
+    <div class="box"><h3>Meleklere iman</h3>
+      <ul class="ex" style="margin-top:6px">
+        <li><b>Kötülükten kaçınır</b>, iyiliğe yönelir.</li>
+        <li>Davranışlarının <b>kaydedildiğini bilir</b>; <b>yalandan ve haksızlıktan</b> uzak durur.</li>
+        <li><b>Doğruluk, yardımseverlik, sevgi, merhamet</b> gibi güzel ahlaka sahip olur.</li>
+        <li>Melekler Allah'ın izniyle insanları <b>korur, dua eder, destekler</b> (Şûra 5, Rad 11). Allah'ın sevgisini hisseder, buna layık olmaya çalışır.</li>
+        <li>İnsanı <b>manevi olarak güçlü</b> kılar.</li>
+      </ul></div>
+    <div class="box ar" lang="ar"><h3>الإيمان بالملائكة</h3>
+      <ul style="margin-top:6px">
+        <li>يبتعد عن الشر ويتجه إلى الخير.</li>
+        <li>يعلم أن أعماله تُسجَّل فيبتعد عن الكذب والظلم.</li>
+        <li>يتحلى بالصدق والمساعدة والمحبة والرحمة.</li>
+        <li>الملائكة تحمي وتدعو وتؤيّد بإذن الله، فيشعر بحب الله ويسعى ليستحقه.</li>
+        <li>يقوّيه معنوياً.</li>
+      </ul></div>
+  </div>
+  <div class="bi">
+    <div class="box"><h3>Ahirete iman</h3>
+      <ul class="ex" style="margin-top:6px">
+        <li><b>Hayatını anlamlandırır.</b> Her şeyin bir yaratılış amacı olduğunu anlar.</li>
+        <li><b>Sorumluluk bilinci</b>: ailesine, çevresine ve tüm canlılara karşı.</li>
+        <li><b>Adalet</b>, iyilik, <b>ihtiyaç sahiplerine yardım</b>, akraba ve komşularla iyi geçinme ilkesini edinir (Nahl 90).</li>
+        <li>Güzel davranışlarının karşılığını <b>ahirette göreceğini</b> bilir.</li>
+        <li>Dünyanın <b>imtihan yeri</b> olduğunu bilir; musibetlere <b>sabırla</b> karşı koyar.</li>
+        <li><b>Yok olma endişesinden kurtulur</b>; sevdikleriyle ahirette birlikte olacağını bilmek <b>huzur</b> verir.</li>
+      </ul></div>
+    <div class="box ar" lang="ar"><h3>الإيمان بالآخرة</h3>
+      <ul style="margin-top:6px">
+        <li>يعطي حياته معنى، ويعلم أن لكل شيء غاية.</li>
+        <li>يشعر بالمسؤولية تجاه أسرته وبيئته وكل المخلوقات.</li>
+        <li>يلتزم بالعدل والإحسان ومساعدة المحتاجين وحسن الجوار وصلة الأرحام.</li>
+        <li>يعلم أنه سيرى جزاء أعماله الحسنة في الآخرة.</li>
+        <li>يعلم أن الدنيا دار امتحان فيصبر على المصائب.</li>
+        <li>يتخلص من قلق الفناء، ويطمئن لأنه سيلتقي أحبّته في الآخرة.</li>
+      </ul></div>
+  </div>
+  <div class="box trap"><div class="bi">
+    <p><b>Kitapta bir çıkarım sorusu:</b> “Ahirete inanan insandan hangi davranışlar beklenir?” Doğru: adaletle hükmetmek ve iyi davranışların yaygınlaşması için çaba göstermek. <b>Duyarsız davranmak beklenmez.</b> <span class="pg">s. 45, soru 18 → B</span></p>
+    <p class="ar" lang="ar">من يؤمن بالآخرة يُنتظر منه العدل ونشر الأخلاق الحسنة، ولا يُنتظر منه التهاون في أداء واجباته تجاه الفرد والمجتمع.</p>
+  </div></div>
+</section>
+
+<section class="card t3" id="u3-ornek">
+  <h2>Ayet, hadis, örnek olay <span class="ar" lang="ar">آية وحديث وقصة</span> <span class="pg">s. 32–33</span></h2>
+  <div class="tw"><table>
+    <thead><tr><th>Kaynak</th><th>Vurgulanan değer</th><th lang="ar">القيمة</th></tr></thead>
+    <tbody>
+      <tr><td>Bakara 195: “İyi ve yararlı işleri en güzel şekilde yapın.”</td><td style="font-weight:400">İyilik, güzel iş yapma, sorumluluk</td><td lang="ar" dir="rtl" style="font-weight:400">الإحسان وإتقان العمل والمسؤولية</td></tr>
+      <tr><td>Maide 8: “Adalet ile şahitlik eden kimseler olun. Bir topluma olan kininiz sizi adaletsizliğe itmesin.”</td><td style="font-weight:400">Adalet, tarafsızlık</td><td lang="ar" dir="rtl" style="font-weight:400">العدل وعدم الظلم حتى مع من نكرههم</td></tr>
+      <tr><td>Hadis: “Allah'a ve ahiret gününe iman eden misafirine ikram etsin, komşusunu rahatsız etmesin, ya hayır söylesin ya da sussun.”</td><td style="font-weight:400">Misafire ikram, komşuluk hakkı, güzel söz</td><td lang="ar" dir="rtl" style="font-weight:400">إكرام الضيف وحق الجار والكلمة الطيبة</td></tr>
+    </tbody>
+  </table></div>
+  <div class="say">
+    <p class="who">Örnek davranış (kitaptan)</p>
+    <p>Almanya'da yaşayan H.E., ölen insanların evlerini boşaltan bir şirket kurdu. Bir evi boşaltırken dolapta <b>para dolu bir çanta</b> buldu, mirasçısı olan kıza telefonla ulaşıp <b>parayı teslim etti</b>. “Sahibinin rızası olmadan paranın bir kuruşuna dahi dokunamayız” dedi.</p>
+    <p><b>Değerler:</b> dürüstlük, emanete sadakat, haksız kazançtan kaçınma, sorumluluk. Bunlar hesap verme (ahiret) bilinciyle ilişkilidir.</p>
+    <p class="ar" lang="ar">رجل مسلم في ألمانيا وجد حقيبة مليئة بالمال أثناء إفراغ بيت متوفّى، فأوصلها إلى ورثته وقال إنه لا يجوز أخذ شيء بدون رضا صاحبه. القيم: الأمانة والصدق والمسؤولية، وهي مرتبطة بالإيمان بالحساب.</p>
+  </div>
+</section>
+
+<section class="card t3" id="u3-yaz">
+  <h2>Nasıl yazılır? <span class="ar" lang="ar">كيف تكتب الجواب؟</span> <span class="chip">Açık uçlu</span></h2>
+  <div class="bi">
+    <p>Üç parça: <b>inanç → davranış → çünkü</b>. Mutlaka “çünkü” ile nedenini yaz, günlük hayattan bir örnek ekle.</p>
+    <p class="ar" lang="ar">ثلاثة أجزاء: <b>الإيمان ← السلوك ← لأنّ</b>. اكتب السبب دائماً بعد «çünkü» (لأن)، وأضف مثالاً من الحياة اليومية.</p>
+  </div>
+  <div class="model">
+    <p><b>Örnek cevap 1</b> · Meleklere iman davranışlarımı nasıl etkiler?</p>
+    <p style="margin-top:6px">Meleklerin varlığına inanmak davranışlarımı düzeltmemde <mark>motivasyon sağlar</mark>, <mark>çünkü</mark> yaptığım her şeyin melekler tarafından kaydedildiğini bilirim. Bu yüzden yalandan ve haksızlıktan uzak dururum. Örneğin sınavda kopya çekmem.</p>
+  </div>
+  <div class="model">
+    <p><b>Örnek cevap 2</b> · Ahiret inancı insana ne kazandırır?</p>
+    <p style="margin-top:6px">Ahiret inancı hayatıma <mark>anlam katar</mark>, <mark>çünkü</mark> her şeyin bir amaçla yaratıldığını anlarım. Ayrıca <mark>sorumluluk ve hesap verme bilinci</mark> kazandırır, <mark>çünkü</mark> yaptığımın karşılığını göreceğimi bilirim. Böylece ihtiyaç sahiplerine yardım eder, komşularımla iyi geçinirim.</p>
+  </div>
+  <div class="model">
+    <p><b>Örnek cevap 3</b> · Ayet ve hadisten dünya ve ahiret hayatıyla ilgili düşünceniz <span class="pg">s. 44, soru 14</span></p>
+    <p style="margin-top:6px">Dünya hayatı <mark>geçicidir ve bir imtihandır</mark>; ölümle sona erer. Ahiret ise <mark>ebedîdir ve asıl hayattır</mark>. İnsan dünyada yaptığı her şeyin karşılığını ahirette görecektir. Bu yüzden dünyada iyi işler yapmalı ve sorumluluğunu bilmelidir.</p>
+  </div>
+  <div class="model">
+    <p><b>Özlü söz</b> <span class="pg">s. 33</span> · Kitaptaki örnek: <i>“Meleklere iman, huzur ve mutluluk verir inan.”</i> Kendi örneğin: <i>“Ahirete inanan, hesabı bilerek yaşar.”</i></p>
+  </div>
+  <div class="box"><h3>Günlük hayattan örnekler <span class="ar" lang="ar" style="font-weight:600">أمثلة من الحياة</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ul class="ex"><li>Arkadaşlarına iyi davranır. <span class="pg">kitaptaki örnek · s. 36</span></li><li>Ödevini dürüstçe yapar, kopya çekmez.</li><li>Başkasının hakkını yemez, emaneti geri verir.</li><li>İhtiyaç sahibine yardım eder, komşusuna iyi davranır.</li><li>Zorluklarda sabreder, çevresine ve canlılara zarar vermez.</li></ul>
+      <ul class="ar" lang="ar"><li>يحسن معاملة أصدقائه.</li><li>يحلّ واجبه بنفسه ولا يغش.</li><li>لا يأخذ حق غيره ويردّ الأمانة.</li><li>يساعد المحتاج ويحسن إلى جاره.</li><li>يصبر في الشدائد ولا يؤذي البيئة والكائنات.</li></ul>
+    </div></div>
+</section>
+
+<!-- ================= 4. NÂS SURESİ ================= -->
+<section class="unit t4" id="u4">
+  <h2>4 · Bir Sure Öğreniyorum: Nâs Suresi</h2>
+  <p class="code">DKAB.7.1.4 · Nâs suresini ve anlamını okuyarak yorumlayabilme · <b>1 soru</b></p>
+  <div class="bi"><p>Okunuşunu ve anlamını bil, ayetleri sırayla yaz, surenin mesajını anlat.</p>
+    <p class="ar" lang="ar">احفظ قراءتها ومعناها، ورتّب آياتها، واشرح رسالتها.</p></div>
+</section>
+
+<section class="card t4" id="u4-sure">
+  <h2>Nâs suresi <span class="ar" lang="ar">سورة الناس</span> <span class="pg">s. 37–40</span></h2>
+  <div class="surah">
+    <p class="besmele" lang="ar">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيمِ</p>
+    <div class="verse t4"><span class="n">1</span><div class="okunus">Ḳul eûẕü birabbinnâs<small>De ki: “İnsanların Rabbine sığınırım.”</small></div><div class="arabic" lang="ar">قُلْ أَعُوذُ بِرَبِّ النَّاسِ</div></div>
+    <div class="verse t4"><span class="n">2</span><div class="okunus">Melikinnâs<small>İnsanların Melik'ine</small></div><div class="arabic" lang="ar">مَلِكِ النَّاسِ</div></div>
+    <div class="verse t4"><span class="n">3</span><div class="okunus">İlâhinnâs<small>İnsanların İlah'ına</small></div><div class="arabic" lang="ar">إِلٰهِ النَّاسِ</div></div>
+    <div class="verse t4"><span class="n">4</span><div class="okunus">Min şerril vesvâsil ḫannâs<small>Sinsi vesvesecinin kötülüğünden</small></div><div class="arabic" lang="ar">مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ</div></div>
+    <div class="verse t4"><span class="n">5</span><div class="okunus">Elleẕî yüvesvisü fî sudûrinnâs<small>İnsanların kalplerine vesvese veren</small></div><div class="arabic" lang="ar">الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ</div></div>
+    <div class="verse t4"><span class="n">6</span><div class="okunus">Minel cinneti vennâs<small>Cinlerden ve insanlardan</small></div><div class="arabic" lang="ar">مِنَ الْجِنَّةِ وَالنَّاسِ</div></div>
+  </div>
+  <div class="box">
+    <p class="ex"><b>Kitaptaki anlamı (1–6):</b> Rahman ve Rahîm olan Allah'ın adıyla. De ki: “Cinlerden ve insanlardan; insanların kalplerine vesvese veren sinsi vesvesecinin kötülüğünden, insanların Rabbine, insanların Melik'ine, insanların İlah'ına sığınırım.”</p>
+    <p class="ar" lang="ar" style="margin-top:8px"><b>المعنى:</b> قل: ألجأ وأحتمي برب الناس، ملك الناس، إله الناس، من شرّ الموسوس الخفيّ، الذي يوسوس في قلوب الناس، من الجن والناس.</p>
+  </div>
+  <div class="bi">
+    <ul class="ex">
+      <li>Adını surede geçen <b>nâs (insanlar)</b> kelimesinden alır. Namazlarda okunan <b>kısa surelerden</b> biridir. <b>6 ayettir.</b></li>
+      <li>Felak suresiyle birlikte <b>“Muavvizeteyn”</b> adını alır: her türlü kötülüğün şerrinden Allah'a sığınmak için okunması öğütlenen iki sure.</li>
+      <li>Surede <b>vesvese veren şeytanın şerrinden Allah'a sığınılması</b> tavsiye edilir. Vesvese, insanın anlayışını ve davranışlarını etkileyen bir <b>alışkanlık hâline gelmeden önce</b> önlem alınmalıdır.</li>
+      <li>Hz. Muhammed (sav) her gün <b>yatmadan önce</b> Felak ve Nâs'ı okuyarak Allah'a sığınmıştır; <b>her namazdan sonra</b> okunmasını tavsiye etmiştir.</li>
+      <li>“İnsanlar bu iki duadan daha faziletli başka bir dua ile Allah'a sığınmış olmazlar.” (Nesai)</li>
+      <li><b>Dua</b>, Allah'a sığınmaktır.</li>
+    </ul>
+    <ul class="ar" lang="ar">
+      <li>سُمّيت باسم كلمة «الناس» الواردة فيها. وهي من السور القصيرة التي تُقرأ في الصلاة، وآياتها ست.</li>
+      <li>تُسمّى مع سورة الفلق «المعوّذتين»، أي السورتين اللتين يُستعاذ بهما من كل شرّ.</li>
+      <li>فيها الاستعاذة من شرّ الشيطان الذي يوسوس، وعلى المسلم أن يحتاط قبل أن تصير الوسوسة عادة تؤثر في فكره وسلوكه.</li>
+      <li>كان النبي ﷺ يقرأ الفلق والناس كل ليلة قبل النوم، ونصح بقراءتهما بعد كل صلاة.</li>
+      <li>قال: «لن يتعوّذ الناس بمثلهما». والدعاء هو اللجوء إلى الله.</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>Yorum: sure ne anlatıyor? <span class="ar" lang="ar" style="font-weight:600">ما رسالتها؟</span></h3>
+    <div class="bi" style="margin-top:6px">
+      <ul class="ex">
+        <li>Allah'a <b>üç sıfatıyla</b> sığınılıyor: <b>Rab, Melik, İlah</b> (hepsi “insanların”).</li>
+        <li>Kötülük (vesvese) <b>sinsi</b>dir ve <b>kalplere</b> girer.</li>
+        <li>Vesvese <b>hem cinlerden hem insanlardan</b> gelebilir.</li>
+        <li>Çözüm: <b>Allah'a sığınmak</b>.</li>
+      </ul>
+      <ul class="ar" lang="ar">
+        <li>نلجأ إلى الله بثلاث صفات: الرب والملك والإله.</li>
+        <li>الوسوسة خفيّة وتدخل إلى القلوب.</li>
+        <li>قد تأتي من الجن ومن الناس.</li>
+        <li>الحل: الاستعاذة بالله.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="model">
+    <p><b>Örnek cevap</b> · Nâs suresini hangi durumlarda okursun? <span class="pg">s. 40</span></p>
+    <p style="margin-top:6px">Nâs suresini <mark>yatmadan önce</mark> ve <mark>namazdan sonra</mark> okurum. Ayrıca kötü bir düşünce aklıma geldiğinde ya da kötü bir şeye özendirildiğimde okurum, <mark>çünkü</mark> bu sure vesvese veren sinsi vesvesecinin kötülüğünden Allah'a sığınmamı öğretir.</p>
+    <p class="ar" lang="ar" style="margin-top:6px">أقرؤها قبل النوم وبعد الصلاة، وعندما تخطر لي فكرة سيئة، لأنها تعلّمني أن ألجأ إلى الله من شرّ الوسواس الخنّاس.</p>
+  </div>
+</section>
+
+<!-- ================= DRILLS ================= -->
+<section class="card" id="drill" style="--c:var(--ink);--cs:var(--paper)">
+  <h2>Hızlı alıştırmalar <span class="ar" lang="ar">تمارين سريعة</span></h2>
+  <div class="bi">
+    <p>Cevaba dokun. Yeşil doğru, kırmızı yanlış. Doğru-yanlış sorularında açıklama çıkar. Hepsi doğru olana kadar tekrar et.</p>
+    <p class="ar" lang="ar">اضغط على الجواب: الأخضر صحيح والأحمر خطأ. في أسئلة الصح والخطأ يظهر الشرح. أعدها حتى تجيب عن الكل صحيحاً.</p>
+  </div>
+  <h3 style="color:var(--c1)">1 · Doğru mu, yanlış mı? <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">صح أم خطأ؟</span> <span class="pg">kitap s. 31, 42 + birkaç ek</span></h3>
+  <div class="quiz t1" data-quiz="dy"></div>
+  <h3 style="color:var(--c1)">2 · Hangi melek? <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">أي مَلَك؟</span></h3>
+  <div class="quiz t1" data-quiz="melek"></div>
+  <h3 style="color:var(--c2)">3 · Hangi kavram? <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">أي مفهوم؟</span></h3>
+  <div class="quiz t2" data-quiz="ahiret"></div>
+  <h3 style="color:var(--c2)">4 · Ahiret aşamalarını sırala <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">رتّب مراحل الآخرة</span></h3>
+  <div class="seq t2" data-seq="ahiret"></div>
+  <h3 style="color:var(--c3)">5 · İnanç ve davranış <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">الإيمان والسلوك</span></h3>
+  <div class="quiz t3" data-quiz="etki"></div>
+  <h3 style="color:var(--c4)">6 · Nâs suresi: ayetleri sırala <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">رتّب آيات السورة</span> <span class="pg">s. 40</span></h3>
+  <div class="seq t4" data-seq="nas"></div>
+  <h3 style="color:var(--c4)">7 · Nâs suresi soruları <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">أسئلة عن السورة</span></h3>
+  <div class="quiz t4" data-quiz="nas"></div>
+  <h3 style="color:var(--c3)">8 · Kitaptaki çoktan seçmeli sorular <span lang="ar" dir="rtl" style="font-family:var(--f-ar);font-weight:600">أسئلة الكتاب</span> <span class="pg">s. 45–46</span></h3>
+  <div class="quiz t3" data-quiz="kitap"></div>
+</section>
+
+<section class="card" id="terms" style="--c:var(--ink);--cs:var(--paper)">
+  <h2>Terimler: Türkçe · العربية</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Türkçe</th><th lang="ar">العربية</th><th>Kısaca</th></tr></thead>
+    <tbody>
+      <tr><td>âlem</td><td lang="ar" dir="rtl">العالَم</td><td style="font-weight:400">yaratılmış varlıkların tümü</td></tr>
+      <tr><td>gayb</td><td lang="ar" dir="rtl">الغيب</td><td style="font-weight:400">görülemeyen âlem; gelecek</td></tr>
+      <tr><td>melek</td><td lang="ar" dir="rtl">مَلَك (ملائكة)</td><td style="font-weight:400">nurdan, itaatkâr, iradesiz</td></tr>
+      <tr><td>cin</td><td lang="ar" dir="rtl">جِنّ</td><td style="font-weight:400">yalın ateşten, sorumlu</td></tr>
+      <tr><td>şeytan</td><td lang="ar" dir="rtl">شيطان</td><td style="font-weight:400">cinlerden; kibirle isyan etti</td></tr>
+      <tr><td>vahiy</td><td lang="ar" dir="rtl">وحي</td><td style="font-weight:400">Cebrail'in getirdiği Allah'ın emri</td></tr>
+      <tr><td>sûr</td><td lang="ar" dir="rtl">الصُّور</td><td style="font-weight:400">İsrafil'in üfleyeceği borazan</td></tr>
+      <tr><td>ahiret</td><td lang="ar" dir="rtl">الآخرة</td><td style="font-weight:400">ölümden sonraki ebedî hayat</td></tr>
+      <tr><td>ölüm</td><td lang="ar" dir="rtl">الموت</td><td style="font-weight:400">dünya hayatının sonu</td></tr>
+      <tr><td>berzah</td><td lang="ar" dir="rtl">البرزخ</td><td style="font-weight:400">kabir hayatı</td></tr>
+      <tr><td>kıyamet</td><td lang="ar" dir="rtl">القيامة</td><td style="font-weight:400">kâinatın sonu</td></tr>
+      <tr><td>baas</td><td lang="ar" dir="rtl">البعث</td><td style="font-weight:400">yeniden diriliş</td></tr>
+      <tr><td>mahşer / haşir</td><td lang="ar" dir="rtl">المحشر / الحشر</td><td style="font-weight:400">toplanma yeri / toplanma</td></tr>
+      <tr><td>amel defteri</td><td lang="ar" dir="rtl">صحيفة الأعمال</td><td style="font-weight:400">yapılanların yazılı olduğu defter</td></tr>
+      <tr><td>mizan</td><td lang="ar" dir="rtl">الميزان</td><td style="font-weight:400">manevi adalet terazisi</td></tr>
+      <tr><td>cennet / cehennem</td><td lang="ar" dir="rtl">الجنة / النار (جهنم)</td><td style="font-weight:400">mükâfat yeri / ceza yeri</td></tr>
+      <tr><td>ömür / ecel</td><td lang="ar" dir="rtl">العمر / الأجل</td><td style="font-weight:400">yaşam süresi / ölüm zamanı</td></tr>
+      <tr><td>tövbe</td><td lang="ar" dir="rtl">التوبة</td><td style="font-weight:400">pişmanlık, Allah'a yönelmek</td></tr>
+      <tr><td>vesvese</td><td lang="ar" dir="rtl">الوسوسة</td><td style="font-weight:400">kalbe atılan kötü düşünce</td></tr>
+      <tr><td>Muavvizeteyn</td><td lang="ar" dir="rtl">المعوِّذتان</td><td style="font-weight:400">Felak ve Nâs sureleri</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="card" id="check" style="--c:var(--ok);--cs:var(--oks)">
+  <h2>Sınavdan önce <span class="ar" lang="ar">قبل الامتحان</span></h2>
+  <ul class="cl" id="checklist">
+    <li><label><input type="checkbox"><span>Âlem, gayb, melek, cin ve şeytanı ayırabiliyorum.</span><span class="ar" lang="ar">أفرّق بين العالم والغيب والملائكة والجن والشيطان.</span></label></li>
+    <li><label><input type="checkbox"><span>Meleklerin 10 özelliğini sayabiliyorum.</span><span class="ar" lang="ar">أعدّد صفات الملائكة العشر.</span></label></li>
+    <li><label><input type="checkbox"><span>Cebrail, Azrail, Mikâil, İsrafil, Kiramen Kâtibin, Münker-Nekir'in görevlerini biliyorum.</span><span class="ar" lang="ar">أعرف مهام الملائكة الستة.</span></label></li>
+    <li><label><input type="checkbox"><span>Hz. Âdem kıssasını ve şeytanın isyan nedenini anlatabiliyorum.</span><span class="ar" lang="ar">أحكي قصة آدم وسبب عصيان الشيطان.</span></label></li>
+    <li><label><input type="checkbox"><span>Ahiret aşamalarını sırayla söyleyip her birini açıklayabiliyorum.</span><span class="ar" lang="ar">أذكر مراحل الآخرة بالترتيب وأشرح كل واحدة.</span></label></li>
+    <li><label><input type="checkbox"><span>Kıyamet ile baas'ı karıştırmıyorum.</span><span class="ar" lang="ar">لا أخلط بين القيامة والبعث.</span></label></li>
+    <li><label><input type="checkbox"><span>Ayet/hadisten ahiretin hangi aşaması olduğunu bulabiliyorum.</span><span class="ar" lang="ar">أستخرج المرحلة من الآية أو الحديث.</span></label></li>
+    <li><label><input type="checkbox"><span>Allah'ın adil, merhametli ve affedici olduğunu örnekle yazabiliyorum.</span><span class="ar" lang="ar">أكتب عن عدل الله ورحمته وعفوه مع مثال.</span></label></li>
+    <li><label><input type="checkbox"><span>“İnanç → davranış → çünkü” ile cevap yazabiliyorum.</span><span class="ar" lang="ar">أكتب الجواب بصيغة: الإيمان ← السلوك ← لأنّ.</span></label></li>
+    <li><label><input type="checkbox"><span>Nâs suresinin okunuşunu, anlamını ve ayet sırasını biliyorum.</span><span class="ar" lang="ar">أعرف قراءة سورة الناس ومعناها وترتيب آياتها.</span></label></li>
+  </ul>
+  <div class="box tip"><div class="bi">
+    <p>Sınavda: soruyu iki kez oku, boş bırakma. Açık uçlu soruda <b>“çünkü”</b> ile nedenini yaz.</p>
+    <p class="ar" lang="ar">في الامتحان: اقرأ السؤال مرتين، ولا تترك جواباً فارغاً، وفي الأسئلة المفتوحة اكتب السبب بعد «çünkü».</p>
+  </div></div>
+</section>
+
+</main>
+
+<aside>
+  <div class="dist">
+    <p class="kicker">Senaryo 3 · 1. Dönem 1. Yazılı</p>
+    <h2>Soru dağılımı</h2>
+    <p class="sub" lang="ar" dir="rtl" style="font-family:var(--f-ar)">توزيع الأسئلة في الامتحان</p>
+    <a class="drow t1" href="#u1"><span class="n">1</span><span class="t">Varlıklar Âlemi<small>Melekleri sınıflandırabilme · <span>تصنيف الملائكة</span></small><em>DKAB.7.1.1</em></span></a>
+    <a class="drow t2" href="#u2"><span class="n">2</span><span class="t">Dünya ve Ahiret Hayatı<small>Ahiret aşamalarını çözümleme · <span>مراحل الآخرة</span></small><em>DKAB.7.1.2</em></span></a>
+    <a class="drow t3" href="#u3"><span class="n">2</span><span class="t">Melek ve Ahiret İnancının İnsana Kazandırdıkları<small>Analitik düşünme · <span>أثر الإيمان في السلوك</span></small><em>DKAB.7.1.3</em></span></a>
+    <a class="drow t4" href="#u4"><span class="n">1</span><span class="t">Bir Sure Öğreniyorum: Nâs Suresi<small>Okuyarak yorumlama · <span>سورة الناس</span></small><em>DKAB.7.1.4</em></span></a>
+    <div class="total"><span>Toplam · <span lang="ar" style="font-family:var(--f-ar)">المجموع</span></span><span class="big">6</span></div>
+    <p class="dnote">Bu sınavda yok: Hac, Umre, Kurban, Kâfirun suresi, din anlayışındaki yorum farklılıkları.<br><span lang="ar" dir="rtl" style="font-family:var(--f-ar)">ليست في هذا الامتحان: الحج والعمرة والأضحية وسورة الكافرون والاختلاف في فهم الدين.</span></p>
+  </div>
+  <nav class="toc" aria-label="İçindekiler">
+    <div class="h">1 · Varlıklar Âlemi</div>
+    <a href="#u1-alem" class="t1">Âlem ve gayb</a>
+    <a href="#u1-melek" class="t1">Melek, cin, şeytan</a>
+    <a href="#u1-ozellik" class="t1">Meleklerin özellikleri</a>
+    <a href="#u1-gorev" class="t1">Melekler ve görevleri</a>
+    <div class="h">2 · Dünya ve Ahiret</div>
+    <a href="#u2-ahiret" class="t2">Ahiret nedir?</a>
+    <a href="#u2-asama" class="t2">Ahiret aşamaları</a>
+    <a href="#u2-adalet" class="t2">Allah'ın adaleti</a>
+    <a href="#u2-ayet" class="t2">Ayet-hadisten kavram bul</a>
+    <div class="h">3 · Kazandırdıkları</div>
+    <a href="#u3-etki" class="t3">İnanç → davranış</a>
+    <a href="#u3-ornek" class="t3">Ayet, hadis, örnek olay</a>
+    <a href="#u3-yaz" class="t3">Nasıl yazılır?</a>
+    <div class="h">4 · Nâs Suresi</div>
+    <a href="#u4-sure" class="t4">Okunuş, anlam, yorum</a>
+    <div class="h">Pratik</div>
+    <a href="#drill">Hızlı alıştırmalar</a>
+    <a href="#terms">Terimler</a>
+    <a href="#check">Sınavdan önce</a>
+  </nav>
+</aside>
+</div>
+
+<script>
+/* Drills. mcq: [question, options, indexOfRight]. dy: [statement, true/false, reasonInArabic]. seq: ordered list the student must click in sequence. */
+const MCQ = {
+  melek: [
+    ['Peygamberlere vahiy getirmekle görevli melek', ['Cebrail', 'Azrail', 'Mikâil', 'İsrafil'], 0],
+    ['Sûra iki kez üfleyecek melek', ['Mikâil', 'İsrafil', 'Cebrail', 'Azrail'], 1],
+    ['Rızıkların dağıtılması ve yağmurlardan sorumlu melek', ['Azrail', 'Cebrail', 'Mikâil', 'İsrafil'], 2],
+    ['Ölüm vakti gelenlerin canını alan melek', ['Azrail', 'Mikâil', 'Cebrail', 'İsrafil'], 0],
+    ['Kiramen Kâtibin’in görevi nedir?', ['İnsanın sevap ve günahlarını amel defterine yazmak', 'Kabirde sorguya çekmek', 'Vahiy getirmek', 'Sûra üflemek'], 0],
+    ['Kabirde insanları sorguya çeken melekler', ['Kiramen Kâtibin', 'Münker ve Nekir', 'Cebrail ve Mikâil', 'Azrail ve İsrafil'], 1],
+    ['Meleklerle ilgili hangisi doğrudur?', ['Nurdan yaratılmışlardır', 'İradeleri vardır', 'Yeme içme ihtiyaçları vardır', 'Sayılarını insanlar bilir'], 0],
+    ['Cinler hangi maddeden yaratılmıştır?', ['Nur', 'Yalın ateş', 'Toprak', 'Su'], 1],
+    ['Şeytan neden cennetten kovuldu?', ['Hz. Âdem’e secde etmeyip kibirlendiği için', 'Yalan söylediği için', 'Melek olduğu için', 'Hz. Âdem’i sevmediği için'], 0],
+    ['Gayb ne demektir?', ['Görünmez âlem, göz önünde olmayan', 'Görülebilen bütün varlıklar', 'Yalnızca cinler', 'Yalnızca melekler'], 0],
+  ].map(([q, o, a]) => [q, o, a]),
+  ahiret: [
+    ['Dünya hayatının sona ermesiyle başlayan ebedî hayat', ['ahiret', 'berzah', 'mahşer', 'baas'], 0],
+    ['Öldükten sonra insanların yeniden diriltilmesi', ['kıyamet', 'baas', 'mizan', 'ecel'], 1],
+    ['Sevap ve günahların tartıldığı manevi adalet terazisi', ['mahşer', 'amel defteri', 'mizan', 'berzah'], 2],
+    ['Dirilen insanların hesap vermek için toplandığı yer', ['mahşer', 'cennet', 'mizan', 'ömür'], 0],
+    ['Kâinattaki her şeyin son bulması', ['baas', 'kıyamet', 'ecel', 'mahşer'], 1],
+    ['Doğumdan ölüme kadar olan yaşam süresi', ['ecel', 'ömür', 'berzah', 'baas'], 1],
+    ['Ölüm için takdir edilen zaman', ['ömür', 'ecel', 'kıyamet', 'mizan'], 1],
+    ['Kabir hayatına ne denir?', ['mahşer', 'baas', 'berzah', 'mizan'], 2],
+    ['Aşağıdakilerden hangisi cennetin Kur’an’daki isimlerinden biridir?', ['Firdevs', 'Hâviye', 'Mizan', 'Berzah'], 0],
+    ['İnsanların dünyada yaptıklarının yazılı olduğu defter', ['mizan', 'amel defteri', 'mahşer', 'ecel'], 1],
+    ['İsrafil’in birinci üflemesiyle ne olur?', ['Kıyamet kopar, her şey son bulur', 'İnsanlar diriltilir', 'Mizan kurulur', 'Cennete girilir'], 0],
+    ['Ahiret aşamalarının doğru sırası hangisidir?', ['ölüm – kıyamet – baas – mahşer – mizan – cennet/cehennem', 'kıyamet – mahşer – ölüm – cennet/cehennem – mizan – baas', 'baas – ölüm – kıyamet – mahşer – mizan – cennet/cehennem', 'mahşer – kıyamet – cennet/cehennem – baas – mizan – ölüm'], 0],
+  ],
+  etki: [
+    ['Davranışlarının melekler tarafından kaydedildiğini bilen insan…', ['yalandan ve haksızlıktan uzak durur', 'sorumluluk almaz', 'hata yapmaktan korkmaz', 'başkalarını umursamaz'], 0],
+    ['Ahirete inanan insan zorluklar karşısında…', ['sabırla mücadele eder', 'umudunu yitirir', 'hemen vazgeçer', 'başkalarını suçlar'], 0],
+    ['Dünyanın imtihan yeri olduğunu bilen kişi…', ['musibetlere sabreder', 'sorumluluk duymaz', 'ahireti unutur', 'adaleti önemsemez'], 0],
+    ['Ahirete inanan insandan beklenen davranış hangisidir?', ['İnsanlar arasında adaletle hükmetmek', 'Görevlerini yerine getirmede duyarsız olmak', 'Haksızlığa göz yummak', 'Yalnızca kendini düşünmek'], 0],
+    ['Dolaptan çıkan para dolu çantayı mirasçısına teslim eden kişi hangi değerleri gösterir?', ['Dürüstlük ve emanete sadakat', 'Cimrilik', 'Kibir', 'Tembellik'], 0],
+    ['Hangisi meleklere imanın insana kazandırdıklarından biri değildir?', ['Manevi olarak güçlü olmak', 'Kötülükten kaçınmak', 'Sorumluluktan kaçmak', 'İyiliğe yönelmek'], 2],
+    ['Ahiret inancı insanın hayatına ne katar?', ['Anlam', 'Korku ve umutsuzluk', 'Tembellik', 'Bencillik'], 0],
+  ],
+  nas: [
+    ['Nâs suresi kaç ayettir?', ['4', '5', '6', '7'], 2],
+    ['Felak ve Nâs surelerine verilen ortak isim', ['Muavvizeteyn', 'Fatiha', 'Yasin', 'Mülk'], 0],
+    ['Nâs suresinde kimin kötülüğünden Allah’a sığınılır?', ['Vesvese veren sinsi vesveseciden', 'Yalnızca hayvanlardan', 'Yalnızca meleklerden', 'Zamandan'], 0],
+    ['Hz. Muhammed (sav) hangi sureleri yatmadan önce okurdu?', ['Felak ve Nâs', 'Kâfirun ve Nasr', 'Fatiha ve Yasin', 'Mülk ve Rahman'], 0],
+    ['Surenin adı nereden gelir?', ['Surede geçen nâs (insanlar) kelimesinden', 'Bir peygamberin adından', 'Bir şehirden', 'Bir melekten'], 0],
+    ['Surede Allah’a hangi üç sıfatla sığınılır?', ['Rab, Melik, İlah', 'Rahman, Rahim, Melik', 'Yaratıcı, Rızık veren, Âlim', 'Rab, Hakem, Vekil'], 0],
+    ['“Minel cinneti vennâs” ne demektir?', ['Cinlerden ve insanlardan', 'İnsanların Rabbine', 'Kalplere vesvese veren', 'De ki'], 0],
+  ],
+  kitap: [
+    ['Kitap s. 45, soru 17 · Casiye 21–22 ayetlerinden aşağıdaki sonuçlardan hangisi çıkarılamaz?', ['İnsanlar yaptığı her amelin karşılığını Allah katında görecektir', 'Yüce Allah her şeyi bir amaç ve hikmetle yaratmıştır', 'İnsanlar ne yaparsa yapsın affedilecektir', 'Allah, kullarına karşı adil ve merhametlidir'], 2],
+    ['Kitap s. 45, soru 18 · Ahirete inanan insanlardan hangi davranışlar beklenir? (I. adaletle hükmetmek, II. görev ve sorumluluklarında duyarsız davranmak, III. iyi davranışların yaygınlaşması için çaba göstermek)', ['I ve II', 'I ve III', 'II ve III', 'I, II ve III'], 1],
+    ['Kitap s. 45, soru 19 · Varlıklar âlemiyle ilgili hangisi yanlıştır?', ['Hücre, virüs gibi varlıklar teknolojik aletlerle görülebilir', 'Gözle görülemeyen varlıkları inkâr etmek akılla çelişir', 'Melek, cin gibi varlıkların özellikleri ayetlerden öğrenilebilir', 'Görülebilen varlıklar, Kur’an’da gayb kavramıyla ifade edilir'], 3],
+    ['Kitap s. 46, soru 20 · Kelebeğin yaşam döngüsü örneği hangi ayetle ilgilidir?', ['Enbiya 47: adalet terazileri kuracağız', 'Araf 8: amellerin tartılması haktır', 'Bakara 28: sizi dirilten, sonra öldürecek, sonra yine diriltecektir', 'Rad 35: Allah’tan sakınanlara vaadolunan cennet'], 2],
+  ],
+};
+const DY = [
+  ['Çevremizde duyu organlarıyla algılanamayan varlıklar da bulunur.', true, 'صح: مثل الملائكة والجن والشيطان.'],
+  ['Gayb kavramı Kur’an’da görülemeyen varlıklar için kullanılır.', true, 'صح: الغيب هو ما لا يُرى.'],
+  ['Cinler nurdan yaratılmış varlıklardır.', false, 'خطأ: الملائكة من نور، والجن من نار خالصة.'],
+  ['Meleklerin iradeleri vardır.', false, 'خطأ: الملائكة لا إرادة لهم، يطيعون أمر الله.'],
+  ['Kâinatta bulunan her şeyin yok olmasına baas denir.', false, 'خطأ: هذه القيامة (kıyamet). والبعث هو الإحياء بعد الموت.'],
+  ['Mahşer, ahirette insanların hesap vermek üzere toplanacakları yerdir.', true, 'صح: المحشر مكان اجتماع الناس للحساب.'],
+  ['Mizan, günah ve sevapların tartılacağı adalet terazisidir.', true, 'صح: الميزان هو ميزان العدل المعنوي.'],
+  ['Ahiret hayatının son aşaması cennet veya cehennemdir.', true, 'صح: تنتهي المراحل بالجنة أو النار.'],
+  ['Şeytan, Hz. Âdem’e secde etmeyerek Allah’ın (cc) emrine karşı gelmiştir.', true, 'صح: رفض السجود لآدم تكبّراً.'],
+  ['Peygamberler kıyamet vaktini bilirler.', false, 'خطأ: وقتها لا يعلمه إلا الله، والنبي ﷺ قال إنه لا يعلمه.'],
+  ['Ahirete iman, inanç esaslarındandır.', true, 'صح: الإيمان بالآخرة من أركان الإيمان.'],
+  ['Melekler başka şekillere giremezler.', false, 'خطأ: يتشكّلون بأشكال مختلفة بإذن الله، مثل جبريل مع مريم.'],
+  ['Mikâil (as) sûra üflemekle görevli melektir.', false, 'خطأ: الذي ينفخ في الصور إسرافيل، وميكائيل للأرزاق والمطر.'],
+  ['Münker ve Nekir, sorgu melekleri olarak bilinir.', true, 'صح: يسألان العبد في القبر.'],
+  ['Mikroorganizma gibi varlıkların görülebilmesi için teknolojik araçlara ihtiyaç vardır.', true, 'صح: نحتاج المجهر لرؤيتها.'],
+  ['Ölümle başlayıp ebediyen devam edecek olan hayata ahiret hayatı denir.', true, 'صح: هذا تعريف الحياة الآخرة.'],
+  ['Cebrail’in (as) sûra üflemesiyle kıyamet kopacaktır.', false, 'خطأ: إسرافيل هو الذي ينفخ في الصور.'],
+  ['İnsan, yaptığı her şeyin karşılığını göreceği bilinciyle adil olmalıdır.', true, 'صح: الإيمان بالحساب يدفع إلى العدل.'],
+  ['Öldükten sonra diriliş anlamına gelen baas, ahiret hayatının aşamalarından biridir.', true, 'صح: البعث إحدى مراحل الآخرة.'],
+  ['Cennet müminlerin, içinde ebedî kalacakları ahiret yurdudur.', true, 'صح: الجنة دار المؤمنين الأبدية.'],
+  ['Kıyametin kopmasıyla kâinattaki düzen sona erecektir.', true, 'صح: القيامة نهاية نظام الكون.'],
+  ['Cinlerle iletişim kurarak gelecekten haber aldığını söyleyenlere inanmak doğrudur.', false, 'خطأ: لا يجوز تصديق من يدّعي ذلك (s. 16).'],
+  ['Kıyamet kopmadan önce insanlar baas ile diriltilir.', false, 'خطأ: الترتيب: موت ثم قيامة ثم بعث.'],
+  ['Mahşerde amel defterleri verildikten sonra mizanda sevap ve günahlar tartılır.', true, 'صح: صحائف الأعمال ثم الميزان (s. 27).'],
+];
+const SEQ = {
+  ahiret: ['Ölüm', 'Kıyamet', 'Baas', 'Mahşer', 'Mizan', 'Cennet / Cehennem'],
+  nas: ['Ḳul eûẕü birabbinnâs', 'Melikinnâs', 'İlâhinnâs', 'Min şerril vesvâsil ḫannâs', 'Elleẕî yüvesvisü fî sudûrinnâs', 'Minel cinneti vennâs'],
+};
+
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const AGAIN = '<button type="button" class="again">Tekrar · <span lang="ar">أعد</span></button>';
+
+/* multiple choice and true/false share one renderer */
+function renderQuiz(box) {
+  const key = box.dataset.quiz, isDY = key === 'dy';
+  const items = isDY ? DY : MCQ[key];
+  let done = 0, right = 0;
+  box.innerHTML = items.map((it, n) => {
+    if (isDY) return `<div class="qi"><div class="q">${esc(it[0])}</div><div class="opts"><button type="button" data-ok="${it[1] ? 1 : 0}">Doğru · <span lang="ar">صح</span></button><button type="button" data-ok="${it[1] ? 0 : 1}">Yanlış · <span lang="ar">خطأ</span></button></div><div class="why ar" lang="ar">${esc(it[2])}</div></div>`;
+    const order = shuffle(it[1].map((_, i) => i));
+    return `<div class="qi"><div class="q">${esc(it[0])}</div><div class="opts">${order.map(i => `<button type="button" data-ok="${i === it[2] ? 1 : 0}">${esc(it[1][i])}</button>`).join('')}</div></div>`;
+  }).join('') + '<p class="score" aria-live="polite"></p>' + AGAIN;
+  const score = box.querySelector('.score');
+  box.querySelectorAll('.qi').forEach(qi => qi.querySelectorAll('.opts button').forEach(b => b.addEventListener('click', () => {
+    if (qi.dataset.done) return;
+    qi.dataset.done = 1; qi.classList.add('done'); done++;
+    if (b.dataset.ok === '1') { b.classList.add('right'); right++; }
+    else { b.classList.add('wrong'); qi.querySelector('[data-ok="1"]').classList.add('right'); }
+    qi.querySelectorAll('button').forEach(x => x.disabled = true);
+    if (done === items.length) score.textContent = `${right} / ${items.length}` + (right === items.length ? ' ✓' : '');
+  })));
+  box.querySelector('.again').addEventListener('click', () => renderQuiz(box));
+}
+
+/* click the items in the right order */
+function renderSeq(box) {
+  const list = SEQ[box.dataset.seq];
+  let next = 0;
+  box.innerHTML = `<div class="slots">${list.map(() => '<div class="slot"></div>').join('')}</div><div class="bank">${shuffle(list.map((_, i) => i)).map(i => `<button type="button" data-i="${i}">${esc(list[i])}</button>`).join('')}</div><p class="score" aria-live="polite"></p>${AGAIN}`;
+  const slots = box.querySelectorAll('.slot'), score = box.querySelector('.score');
+  box.querySelectorAll('.bank button').forEach(b => b.addEventListener('click', () => {
+    if (+b.dataset.i === next) {
+      slots[next].textContent = b.textContent; slots[next].classList.add('full');
+      b.remove(); next++;
+      if (next === list.length) score.textContent = '✓';
+    } else {
+      b.classList.add('shake'); setTimeout(() => b.classList.remove('shake'), 500);
+    }
+  }));
+  box.querySelector('.again').addEventListener('click', () => renderSeq(box));
+}
+document.querySelectorAll('[data-quiz]').forEach(renderQuiz);
+document.querySelectorAll('[data-seq]').forEach(renderSeq);
+
+/* Checklist ticks are remembered on this device only. */
+const KEY = 'dkab7-s3-checks';
+const boxes = [...document.querySelectorAll('#checklist input')];
+try { const saved = JSON.parse(localStorage.getItem(KEY) || '[]'); boxes.forEach((b, i) => b.checked = !!saved[i]); } catch (e) {}
+boxes.forEach(b => b.addEventListener('change', () => { try { localStorage.setItem(KEY, JSON.stringify(boxes.map(x => x.checked))); } catch (e) {} }));
+
+/* Highlight the section on screen in the side lists. */
+const links = [...document.querySelectorAll('.toc a, .drow')];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+}), { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+</script>
+</body>
+</html>
